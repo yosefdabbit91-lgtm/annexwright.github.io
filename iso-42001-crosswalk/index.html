@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ISO 42001 to NIST AI RMF, EU AI Act &amp; ISO 27001 Crosswalk (2026)</title>
+<meta name="description" content="Free control-by-control crosswalk mapping ISO/IEC 42001:2023 clauses and Annex A controls to NIST AI RMF 1.0, the EU AI Act as amended by the Digital Omnibus, and ISO/IEC 27001:2022. Updated September 2026.">
+<link rel="canonical" href="https://annexwright.com/iso-42001-crosswalk/">
+<meta name="robots" content="index,follow">
+<style>
+:root{--ink:#0E2138;--mut:#5b6b80;--line:#d7dee7;--bg:#fff;--accent:#1f6f78}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:32px 20px 72px}
+h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em}
+h2{font-size:1.25rem;margin:2em 0 .5em}
+.lede{font-size:1.05rem;color:var(--mut);max-width:70ch}
+.eyebrow{font:600 .72rem/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.note{background:#f5f8fa;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:20px 0;font-size:.92rem;color:var(--mut)}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:8px;margin:18px 0}
+table{border-collapse:collapse;width:100%;min-width:980px;font-size:.86rem}
+th,td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--line)}
+th{background:#0E2138;color:#fff;font-weight:600;position:sticky;top:0;white-space:nowrap}
+tr:nth-child(even) td{background:#fafbfc}
+td:first-child{white-space:nowrap;font-weight:600}
+a{color:var(--accent)}
+.cta{border:1px solid var(--line);border-radius:10px;padding:22px;margin:34px 0;background:#f9fbfc}
+.btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;padding:11px 18px;border-radius:7px;font-weight:600;margin-top:8px}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--mut);font-size:.85rem}
+</style></head>
+<body><div class="wrap">
+<p class="eyebrow">Free reference · Annexwright</p>
+<h1>ISO/IEC 42001 × NIST AI RMF × EU AI Act × ISO/IEC 27001 crosswalk</h1>
+<p class="lede">A control-by-control mapping of ISO/IEC 42001:2023 clauses and Annex A controls against NIST AI RMF 1.0, the EU AI Act, and ISO/IEC 27001:2022 — so you can see how much of an existing information security programme already carries over, and where it genuinely does not.</p>
+
+<div class="note"><strong>Indicative mapping — verify against the source texts.</strong> Satisfying a NIST subcategory does not automatically satisfy an ISO control, and the EU AI Act imposes legal duties that no standard fully discharges. Where a row says there is no direct equivalent, that is a real gap you must close separately. This is not legal advice.</div>
+
+<p>Built September 2026, after the Digital Omnibus (Regulation (EU) 2026/1744) came into force on 27 July 2026 and moved the dates: Article 50 transparency applicable from 2 August 2026, machine-readable marking grace to 2 December 2026, Annex III high-risk deferred to 2 December 2027, Annex I to 2 August 2028. Material written before August 2026 states superseded deadlines.</p>
+
+<h2>The mapping</h2>
+<div class="scroll"><table><thead><tr><th>ISO/IEC 42001</th><th>Title</th><th>NIST AI RMF 1.0</th><th>EU AI Act</th><th>ISO/IEC 27001:2022</th><th>Notes</th></tr></thead><tbody>
+<tr><td>Clause 4</td><td>Context of the organization</td><td>GOVERN 1.1–1.2, MAP 1.1</td><td>Art. 2 (scope), Art. 3 (definitions)</td><td>Clause 4</td><td>Determining your role (provider/deployer) is the highest-value step</td></tr>
+<tr><td>Clause 5.2</td><td>AI policy</td><td>GOVERN 1.1, 1.2</td><td>Art. 4 (literacy culture), Art. 26 (deployer duties)</td><td>Clause 5.2 / A.5.1</td><td>One policy set can cover both AI and information security if cross-referenced</td></tr>
+<tr><td>Clause 5.3 / A.3.2</td><td>Roles and responsibilities</td><td>GOVERN 2.1–2.3</td><td>Art. 26(2) (human oversight assignment)</td><td>Clause 5.3 / A.5.2</td><td>Name individuals, not departments</td></tr>
+<tr><td>A.3.3</td><td>Reporting of concerns</td><td>GOVERN 4.3</td><td>Art. 87 (reporting of infringements)</td><td>A.6.8</td><td>Reuse an existing whistleblowing channel</td></tr>
+<tr><td>Clause 6.1.2 / 8.2</td><td>AI risk assessment</td><td>MAP 1–5, MEASURE 2</td><td>Art. 9 (risk management for high-risk)</td><td>Clause 6.1.2 / 8.2</td><td>Article 9 is a lifecycle risk management system, broader than a register</td></tr>
+<tr><td>Clause 6.1.3</td><td>Risk treatment and SoA</td><td>MANAGE 1–2</td><td>Art. 9(5) (residual risk acceptability)</td><td>Clause 6.1.3 / A.5.x</td><td>SoA format is directly transferable from ISO 27001 practice</td></tr>
+<tr><td>Clause 6.1.4 / A.5.2–A.5.5</td><td>AI system impact assessment</td><td>MAP 5.1–5.2, MEASURE 2.11</td><td>Art. 27 (FRIA), Art. 9</td><td>A.5.34 (privacy) — partial</td><td>A DPIA is not an AI impact assessment; run both where personal data is processed</td></tr>
+<tr><td>Clause 7.2 / A.4.6</td><td>Competence</td><td>GOVERN 3.2, 4.1</td><td>Art. 4 (AI literacy), Art. 26(2)</td><td>Clause 7.2 / A.6.3</td><td>Article 4 duty applies now and is frequently overlooked</td></tr>
+<tr><td>Clause 7.4 / A.8.x</td><td>Communication and information</td><td>GOVERN 4.2, MAP 3.4</td><td>Art. 50 (transparency), Art. 13 (instructions for use)</td><td>A.5.14</td><td>Art. 50 is in force since 2 Aug 2026 — see AW-E11</td></tr>
+<tr><td>Clause 7.5</td><td>Documented information</td><td>GOVERN 1.4, MAP 4.1</td><td>Art. 11 + Annex IV (technical documentation), Art. 18</td><td>Clause 7.5 / A.5.37</td><td>Annex IV is far more prescriptive than Clause 7.5</td></tr>
+<tr><td>A.6.1.2–A.6.1.3</td><td>Responsible development objectives and processes</td><td>GOVERN 1.3, MAP 2.3</td><td>Art. 9, Art. 17 (quality management system)</td><td>A.8.25 (secure development)</td><td>Extend your SDLC rather than creating a second one</td></tr>
+<tr><td>A.6.2.2–A.6.2.3</td><td>Requirements, specification and design documentation</td><td>MAP 2.1–2.3</td><td>Art. 11, Annex IV(1)–(2)</td><td>A.8.27</td><td></td></tr>
+<tr><td>A.6.2.4</td><td>Verification and validation</td><td>MEASURE 1–2, 2.5–2.9</td><td>Art. 15 (accuracy, robustness, cybersecurity)</td><td>A.8.29 (security testing)</td><td>Set thresholds before testing or the evidence is worthless</td></tr>
+<tr><td>A.6.2.5</td><td>Deployment</td><td>MANAGE 1.3, 4.1</td><td>Art. 16, Art. 26</td><td>A.8.31–A.8.32</td><td></td></tr>
+<tr><td>A.6.2.6</td><td>Operation and monitoring</td><td>MEASURE 3–4, MANAGE 4.1</td><td>Art. 26(5) (deployer monitoring), Art. 72 (post-market monitoring)</td><td>A.8.16 (monitoring)</td><td></td></tr>
+<tr><td>A.6.2.7</td><td>Technical documentation</td><td>MAP 4.1, GOVERN 1.4</td><td>Art. 11 + Annex IV, Art. 53 (GPAI)</td><td>A.5.37</td><td></td></tr>
+<tr><td>A.6.2.8</td><td>Event logs</td><td>MEASURE 2.6, MANAGE 4.1</td><td>Art. 12 (record-keeping), Art. 19 (log retention)</td><td>A.8.15 (logging)</td><td>Log retention duties under the Act can exceed your default policy</td></tr>
+<tr><td>A.7.2–A.7.6</td><td>Data governance for AI</td><td>MAP 2.3, MEASURE 2.2</td><td>Art. 10 (data and data governance)</td><td>A.5.12–A.5.14, A.8.10–A.8.11</td><td>Art. 10 requires representativeness and bias examination for high-risk</td></tr>
+<tr><td>A.8.2</td><td>Information for users</td><td>GOVERN 5.1, MAP 3.4</td><td>Art. 13 (instructions for use), Art. 50(1)</td><td>A.5.14</td><td></td></tr>
+<tr><td>A.8.3</td><td>External reporting</td><td>GOVERN 4.3, 5.2</td><td>Art. 85 (right to lodge complaint), Art. 87</td><td>A.6.8</td><td></td></tr>
+<tr><td>A.8.4</td><td>Communication of incidents</td><td>MANAGE 4.3</td><td>Art. 73 (serious incident reporting)</td><td>A.5.24–A.5.26</td><td>Art. 73 timelines are short — build them into the incident procedure</td></tr>
+<tr><td>A.9.2–A.9.4</td><td>Responsible use and intended purpose</td><td>GOVERN 5, MANAGE 2.2</td><td>Art. 5 (prohibited), Art. 26(1) (use per instructions)</td><td>A.5.10 (acceptable use)</td><td>Using a system outside its intended purpose can make you the provider</td></tr>
+<tr><td>A.10.2–A.10.4</td><td>Third parties, suppliers and customers</td><td>GOVERN 6.1–6.2, MAP 4.1</td><td>Art. 25 (value chain), Art. 28, Art. 53</td><td>A.5.19–A.5.23</td><td>Contract clauses do most of the work here</td></tr>
+<tr><td>Clause 9.1</td><td>Monitoring and measurement</td><td>MEASURE 1–4</td><td>Art. 72 (post-market monitoring plan)</td><td>Clause 9.1</td><td></td></tr>
+<tr><td>Clause 9.2</td><td>Internal audit</td><td>GOVERN 4.1</td><td>No direct equivalent (but supports Art. 17 QMS)</td><td>Clause 9.2</td><td></td></tr>
+<tr><td>Clause 9.3</td><td>Management review</td><td>GOVERN 1.5</td><td>No direct equivalent</td><td>Clause 9.3</td><td></td></tr>
+<tr><td>Clause 10</td><td>Improvement and corrective action</td><td>MANAGE 4.2–4.3</td><td>Art. 20 (corrective actions), Art. 73</td><td>Clause 10</td><td></td></tr>
+<tr><td>—</td><td>Human oversight (spread across A.6, A.9)</td><td>MEASURE 2.8, MANAGE 2.3–2.4</td><td>Art. 14 (human oversight), Art. 26(2)</td><td>No direct equivalent</td><td>The Act is far more prescriptive than the standard here — see AW-E12</td></tr>
+<tr><td>—</td><td>Transparency to individuals</td><td>GOVERN 5.1, MAP 3.4</td><td>Art. 50(1)–(4)</td><td>No direct equivalent</td><td>Legal duty with fixed dates; no standard substitutes for it</td></tr>
+<tr><td>—</td><td>Prohibited practices</td><td>MAP 1.1, GOVERN 1.1</td><td>Art. 5</td><td>No direct equivalent</td><td>Absolute prohibition — screening belongs in every impact assessment</td></tr>
+</tbody></table></div>
+
+<div class="cta">
+<h2 style="margin-top:0">Want this as a working file?</h2>
+<p>The same crosswalk as an Excel workbook, with reference tabs for the EU AI Act articles and the NIST functions, is free — no email required. It is a complete document from the paid set, not a teaser.</p>
+<a class="btn" href="https://annexwright.gumroad.com/l/ukdze">Download the workbook free</a>
+<p style="margin-bottom:0;margin-top:18px;font-size:.92rem;color:#5b6b80">If you need the documents the crosswalk points at — AI governance policy, system inventory, risk register, impact assessment, human oversight procedure, transparency notices and an enterprise questionnaire answer bank — that is <a href="https://annexwright.gumroad.com/l/essentials">Annexwright Essentials, 20 documents for $149</a>.</p>
+</div>
+
+<h2>How to use it</h2>
+<p>Start from the ISO/IEC 42001 column. For each clause or Annex A control, check what you already hold under ISO/IEC 27001 — for many organisations a substantial part of clauses 4 to 10 maps across, because the management-system structure is shared. What does not map across is usually the AI-specific substance: impact assessment, data governance for training data, human oversight, and the transparency duties under Article 50.</p>
+<p>The EU AI Act column tells you which obligations attach, but your role matters more than the mapping: a provider and a deployer of the same system carry different duties. Determine that first.</p>
+
+<footer>
+<p>Published by <a href="https://annexwright.com/">Annexwright</a> — editable ISO/IEC 42001, EU AI Act and US state AI law governance documentation. Annexwright launched in September 2026. This page is a free reference and is not legal advice; documentation does not make an organisation compliant. Corrections to the mapping are welcome: <a href="mailto:hello@annexwright.com">hello@annexwright.com</a>.</p>
+</footer>
+</div></body></html>
