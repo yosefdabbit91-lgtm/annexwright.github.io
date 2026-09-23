@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What sits behind an AI governance answer? Question, answer, artifact, record</title>
+<link rel="canonical" href="https://annexwright.com/ai-governance-evidence/">
+<meta name="robots" content="index,follow">
+<meta name="description" content="An AI governance answer is only as strong as the artifact and record behind it. The chain from questionnaire question to supporting document to the record that proves it is operating, with a real worked example.">
+<meta property="og:title" content="What sits behind an AI governance answer? Question, answer, artifact, record">
+<meta property="og:description" content="An AI governance answer is only as strong as the artifact and record behind it. The chain from questionnaire question to supporting document to the record that proves it is operating, with a real worked example.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://annexwright.com/ai-governance-evidence/">
+<meta property="og:image" content="https://annexwright.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Annexwright — the editable policies, registers, assessments and documentation structure behind your AI governance answers.">
+<meta property="og:site_name" content="Annexwright">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What sits behind an AI governance answer? Question, answer, artifact, record">
+<meta name="twitter:description" content="An AI governance answer is only as strong as the artifact and record behind it. The chain from questionnaire question to supporting document to the record that proves it is operating, with a real worked example.">
+<meta name="twitter:image" content="https://annexwright.com/og-image.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{--paper:#F3F5F8;--surface:#FFFFFF;--surface-2:#EAEEF3;--ink:#111820;--ink-2:#37444F;--muted:#63727F;
+--line:#D6DDE5;--line-strong:#B8C4CF;--navy:#16324F;--navy-2:#0E2138;--crimson:#A4122F;--teal:#25707C;
+--serif:"Spectral",Georgia,"Times New Roman",serif;--sans:"Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+--mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;--wrap:860px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0D1319;--surface:#151D25;--surface-2:#1D2831;--ink:#EDF1F5;--ink-2:#C3CDD6;
+--muted:#8A99A6;--line:#27333D;--line-strong:#3A4854;--navy:#9FC0DE;--navy-2:#0A1119;--crimson:#F0798E;--teal:#63BECB}}
+*{box-sizing:border-box}html,body{margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+a{color:inherit}.ilink{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+h1,h2,h3{margin:0;text-wrap:balance}
+h1{font-family:var(--serif);font-weight:700;font-size:clamp(1.9rem,4.2vw,2.7rem);line-height:1.1;letter-spacing:-.015em}
+h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.35rem,2.4vw,1.75rem);line-height:1.2;margin:44px 0 14px}
+h3{font-family:var(--sans);font-weight:700;font-size:1.02rem;margin:26px 0 8px}
+p{margin:0 0 16px}ul,ol{margin:0 0 16px;padding-left:22px}li{margin:0 0 8px}
+.eyebrow{font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:500;margin:0 0 10px}
+.lede{font-size:1.12rem;color:var(--ink-2);margin:0 0 18px}
+.small{font-size:.9rem;color:var(--muted);line-height:1.55}
+.masthead{background:var(--navy-2);color:#EDF1F5;padding:16px 0}
+.masthead .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;max-width:1120px}
+.brand{font-family:var(--serif);font-size:1.2rem;font-weight:700;text-decoration:none}
+.masthead nav{display:flex;gap:22px;font-size:.9rem;color:#C6D4E2;flex-wrap:wrap}
+.masthead nav a{text-decoration:none}.masthead nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.crumbs{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:22px 0 0}
+main{padding:14px 0 40px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.97rem;padding:13px 22px;border-radius:3px;
+text-decoration:none;border:1px solid transparent;transition:transform .12s ease}
+.btn-primary{background:var(--navy);color:var(--surface);border-color:var(--navy)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn-primary{color:var(--navy-2)}}
+.btn-primary:hover{transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-strong)}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:8px 0 6px}
+.box{border:1px solid var(--line);border-radius:4px;background:var(--surface);padding:22px;margin:24px 0}
+.box h3{margin-top:0}
+.rule{border-left:2px solid var(--crimson);padding:2px 0 2px 18px;margin:22px 0}
+.sample{border:1px solid var(--line);border-radius:4px;overflow:hidden;background:var(--surface);margin:22px 0}
+.sample-head{padding:10px 16px;background:var(--surface-2);border-bottom:1px solid var(--line);font-family:var(--mono);
+font-size:.66rem;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-2);font-weight:600}
+.srow{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:13px 16px;border-top:1px solid var(--line);align-items:baseline}
+.srow:first-of-type{border-top:none}
+@media (max-width:640px){.srow{grid-template-columns:1fr;gap:3px}}
+.srow .lbl{font-family:var(--mono);font-size:.65rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.srow .val{font-size:.94rem;color:var(--ink);line-height:1.55}
+.srow .val.ev{font-family:var(--mono);font-size:.85rem;color:var(--teal)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:18px 0}
+@media (max-width:720px){.grid2{grid-template-columns:1fr;gap:16px}}
+.gitem{border-top:2px solid var(--line-strong);padding-top:13px}
+.gitem b{display:block;font-size:.96rem;margin-bottom:4px}
+.gitem span{font-size:.9rem;color:var(--ink-2);line-height:1.5}
+details{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+details+details{border-top:none}
+details>summary{list-style:none;cursor:pointer;padding:16px 0;display:flex;justify-content:space-between;gap:18px;font-weight:600;font-size:.98rem}
+details>summary::-webkit-details-marker{display:none}
+details>summary::after{content:"+";font-family:var(--mono);color:var(--muted)}
+details[open]>summary::after{content:"\2212"}
+details .body{padding:0 0 18px;font-size:.94rem;color:var(--ink-2);max-width:700px}
+.pricebar{display:flex;gap:26px;flex-wrap:wrap;align-items:baseline;font-family:var(--mono);margin:6px 0 16px}
+.pricebar b{font-size:1.5rem;color:var(--ink)}
+.pricebar span{font-size:.8rem;color:var(--muted)}
+.method{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;margin-top:38px}
+.method a{color:inherit}
+footer{border-top:1px solid var(--line);padding:30px 0 50px;font-size:.82rem;color:var(--muted);margin-top:30px}
+footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;max-width:1120px}
+footer .fb{font-family:var(--serif);font-size:1rem;font-weight:700;color:var(--ink);display:block;margin-bottom:4px}
+.related{display:flex;gap:14px;flex-wrap:wrap;margin:10px 0 0;font-size:.92rem}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://annexwright.com/#org","name":"Annexwright","url":"https://annexwright.com/","logo":"https://annexwright.com/apple-touch-icon.png","email":"hello@annexwright.com","description":"Independent product studio publishing editable ISO/IEC 42001 and EU AI Act governance documentation systems."},{"@type":"Article","headline":"What sits behind an AI governance answer?","description":"The chain from question to answer to supporting governance artifact to the record that proves the artifact is operating.","mainEntityOfPage":"https://annexwright.com/ai-governance-evidence/","image":"https://annexwright.com/og-image.png","author":{"@type":"Person","name":"Yosef Dabbit","url":"https://annexwright.com/#about-honest"},"publisher":{"@id":"https://annexwright.com/#org"},"datePublished":"2026-09-23","dateModified":"2026-09-23","inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Annexwright","item":"https://annexwright.com/"},{"@type":"ListItem","position":2,"name":"What sits behind an AI governance answer?","item":"https://annexwright.com/ai-governance-evidence/"}]}]}</script>
+</head>
+<body>
+<header class="masthead"><div class="wrap"><a class="brand" href="/">Annexwright</a><nav><a href="/essentials/">Essentials</a><a href="/professional/">Professional</a><a href="/consultant/">Consultant</a><a href="/ai-security-questionnaire/">Questionnaire</a><a href="/#pricing">Pricing</a></nav></div></header>
+<div class="wrap"><p class="crumbs"><a class="ilink" href="/">Annexwright</a> / AI governance evidence</p></div>
+<main><div class="wrap">
+
+<p class="eyebrow">Reference</p>
+<h1>What sits behind an AI governance answer?</h1>
+<p class="lede">Any organization can write "we use AI responsibly." The question that decides a security review is the next
+one: show me. This page sets out the chain a defensible answer runs on — question, answer, artifact, record — and what each
+link has to contain.</p>
+<p class="small">Written by Yosef Dabbit, Annexwright · Published 2026-09-23 · Last reviewed 2026-09-23 · Edition 2026.1</p>
+
+<h2>An unsupported answer is a claim</h2>
+<p>Enterprise AI questionnaires have stopped asking only whether a control exists. They increasingly ask you to explain it,
+to provide evidence, and to describe the process. That shift is what turns AI governance from a statement into a
+documentation problem.</p>
+<p>The failure mode is predictable. A vendor answers twenty questions confidently in an afternoon. A week later the reviewer
+picks three answers and asks for the underlying document. If the document does not exist, or exists but is empty, or exists
+but names no owner, the deal slows — and the vendor's other nineteen answers are now also in doubt.</p>
+
+<h2>The chain</h2>
+<div class="grid2">
+<div class="gitem"><b>1 · The question</b><span>Usually one of about twenty. They cluster into governance, risk and impact,
+data, security, and transparency and people.
+<a class="ilink" href="/ai-security-questionnaire/">The full list is here</a>.</span></div>
+<div class="gitem"><b>2 · The answer</b><span>Short, factual, in your own words, and true of your organization today. Not a
+capability you intend to build.</span></div>
+<div class="gitem"><b>3 · The artifact</b><span>The document the answer describes: a policy, an inventory, a register, an
+assessment, a procedure. It has to be attachable.</span></div>
+<div class="gitem"><b>4 · The record</b><span>What proves the artifact is operating rather than shelved: a signature with a
+date, populated rows, a named owner, a review date that has not passed, a completed assessment.</span></div>
+</div>
+
+<h2>Worked: "do you maintain an inventory of AI systems?"</h2>
+<p>This is a row from AW-E17, the Enterprise AI Questionnaire Answer Bank, as it ships:</p>
+<div class="sample">
+<div class="sample-head">AW-E17 · §1 Governance</div>
+<div class="srow"><span class="lbl">Question</span><span class="val">Do you maintain an inventory of AI systems?</span></div>
+<div class="srow"><span class="lbl">Starting answer</span><span class="val">Yes. Every AI system, including third-party models
+and AI features in SaaS tools, is registered in our AI System Inventory with an owner, purpose, data classes, risk tier and
+review date. The inventory is reviewed monthly.</span></div>
+<div class="srow"><span class="lbl">Supporting artifact</span><span class="val ev">AW-E06 AI System Inventory Register</span></div>
+<div class="srow"><span class="lbl">Record that proves it</span><span class="val">Rows with named owners, risk tiers and review
+dates in the future — not a spreadsheet created the morning the questionnaire arrived.</span></div>
+</div>
+<p>Read the answer again and notice how much of it is a specification for the artifact. Owner, purpose, data classes, risk
+tier, review date, monthly cadence — an inventory that does not carry those five fields cannot support the sentence. That is
+the useful property of writing the answer and the document together: the answer tells you what the document must contain.</p>
+
+<div class="rule"><p><strong>An AI inventory is not a list of software subscriptions.</strong> The systems most often missing
+are the ones nobody procured as "AI": a feature switched on inside an existing SaaS tool, a model called through an API by one
+team, an assistant embedded in a support workflow. Scope is where inventories fail, not format.</p></div>
+
+<h2>Why a policy alone is not a governance system</h2>
+<p>A policy states intent. A governance system is the set of artifacts and records that show intent being carried out:
+who owns each system, what risks were identified and what was done about them, which decisions had a human in the loop, what
+happened when something went wrong, who was trained. A reviewer asking for evidence is asking for the second thing.</p>
+<p>This is also why documentation alone does not make an organization compliant or certified. The documents are the structure;
+the records accumulate only by operating them.</p>
+
+<h2>Three things a reviewer can ask for immediately after your answer</h2>
+<ol>
+<li><strong>The artifact itself</strong> — attach the policy, the register, the assessment.</li>
+<li><strong>The owner</strong> — a named person, not a department.</li>
+<li><strong>The last review date</strong> — and whether the next one is in the future.</li>
+</ol>
+<p>If all three are available for every answer you gave, the review moves on. If they are not, you have found your gap list.</p>
+
+<div class="box"><h3>Take a complete document first</h3><p>The four-way crosswalk is a whole file from the paid set — ISO/IEC 42001 mapped to NIST AI RMF, the EU AI Act and ISO/IEC 27001, clause by clause, as an Excel workbook. No signup, no email gate.</p><div class="cta-row"><a class="btn btn-ghost" href="/iso-42001-crosswalk/">Read the crosswalk</a><a class="btn btn-ghost" href="https://annexwright.com/iso-42001-crosswalk/AW-P09-Four-Way-Framework-Crosswalk.xlsx">Download the workbook</a></div></div>
+<div class="box"><h3>The documents behind the chain</h3>
+<p>Annexwright publishes the artifacts these answers rest on: policy, acceptable use, inventory, a risk register pre-seeded
+with 41 AI-specific risks, impact assessment, human oversight, incident response, vendor due diligence and the answer bank
+itself.</p>
+<div class="cta-row"><a class="btn btn-primary" href="/essentials/">Essentials — $149</a>
+<a class="btn btn-ghost" href="/professional/">Professional — $397</a></div></div>
+<div class="rule"><p><strong>What you still do.</strong> Annexwright supplies the documentation architecture. You decide which systems are in scope, who owns them, what your risk appetite is and what you will actually do; you fill the registers, adapt the wording, operate the controls and keep the records. Buying documentation does not make an organization compliant or certified.</p></div>
+<p class="method"><strong>How this page was checked.</strong> Regulatory dates on this page were taken from the official texts and from the European Commission, the Illinois General Assembly, Texas Legislature Online, the Colorado General Assembly, the California Privacy Protection Agency, the New York State Senate and NYC DCWP, and were last reviewed on 2026-09-23. Where a date is an applicability or compliance deadline rather than an entry-into-force date, the page says so. Regulation changes; check the primary text before relying on any date for a decision. Nothing here is legal advice.</p>
+
+<h2>Related</h2><div class="related"><a class="ilink" href="/ai-security-questionnaire/">The 20 questionnaire questions</a> <a class="ilink" href="/essentials/">Essentials — the documents</a> <a class="ilink" href="/iso-42001-gap-assessment/">Gap assessment explained</a></div>
+</div></main>
+<footer><div class="wrap"><span><span class="fb">Annexwright</span>AI Governance Toolkit — Edition 2026.1. Questions: <a class="ilink" href="mailto:hello@annexwright.com">hello@annexwright.com</a></span><span style="max-width:520px">Templates and guidance, not legal advice. ISO and IEC are trademarks of their respective organizations; Annexwright is not affiliated with, endorsed by or accredited by ISO, IEC or any certification body.</span></div></footer>
+</body>
+</html>
