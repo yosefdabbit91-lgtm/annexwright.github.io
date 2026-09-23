@@ -56,9 +56,9 @@
   .lede{font-size:1.14rem; color:var(--ink-2); line-height:1.6}
   .small{font-size:.9rem; color:var(--muted); line-height:1.55}
   .mono{font-family:var(--mono)}
-  section{padding:104px 0}
+  section{padding:84px 0}
   section + section{border-top:1px solid var(--line)}
-  @media (max-width:760px){section{padding:68px 0}}
+  @media (max-width:760px){section{padding:56px 0}}
   .stack{display:flex; flex-direction:column}
   .g8{gap:8px}.g12{gap:12px}.g16{gap:16px}.g20{gap:20px}.g24{gap:24px}.g28{gap:28px}.g32{gap:32px}.g40{gap:40px}.g48{gap:48px}
 
@@ -71,8 +71,8 @@
   .masthead nav a:hover{color:#fff; text-decoration:underline; text-underline-offset:3px}
 
   /* ---- hero ---- */
-  .hero{padding:112px 0 88px}
-  @media (max-width:760px){.hero{padding:64px 0 56px}}
+  .hero{padding:88px 0 64px}
+  @media (max-width:760px){.hero{padding:56px 0 48px}}
   .hero h1 em{font-style:italic; color:var(--crimson)}
   .hero .lede em{font-style:normal; color:var(--crimson); font-weight:600}
   .cta-row{display:flex; gap:12px; flex-wrap:wrap; align-items:center}
@@ -183,8 +183,8 @@
   .closingline{font-family:var(--serif); font-size:1.18rem; font-style:italic; color:var(--ink); line-height:1.4}
 
   /* ---- secondary sections ---- */
-  #partners{padding:64px 0}
-  #about-honest{padding:72px 0}
+  #partners{padding:52px 0}
+  #about-honest{padding:60px 0}
   @media (max-width:760px){#partners{padding:52px 0}#about-honest{padding:56px 0}}
 
   /* ---- service note ---- */
@@ -273,7 +273,7 @@
 <!-- ===== HERO + THE MECHANISM ===== -->
 <section class="hero">
   <div class="wrap">
-   <div class="stack g28">
+   <div class="stack g24">
     <div class="stack g24 narrow">
       <p class="eyebrow">Annexwright</p>
       <h1>Your customer asked: <em>how do you govern AI?</em></h1>
@@ -340,29 +340,17 @@
 
 <!-- ===== HOW IT WORKS ===== -->
 <section id="how">
-  <div class="wrap stack g40">
+  <div class="wrap stack g32">
     <div class="stack g12 narrow">
       <p class="eyebrow">How it works</p>
       <h2>You don't buy a folder of templates.</h2>
       <p class="lede">You buy the documentation architecture already designed, so the work you do is your own facts and decisions rather than the structure around them.</p>
     </div>
 
-    <div class="cols cols-3">
-      <div class="card">
-        <span class="tag">Starting point</span>
-        <h3>The architecture is already designed</h3>
-        <p>Documents that reference each other, a clause and article map, registers with working formulas, and an order of work.</p>
-      </div>
-      <div class="card">
-        <span class="tag">Your work</span>
-        <h3>You supply the company</h3>
-        <p>Your systems, owners, decisions, risk appetite and processes. Bracketed placeholders mark every fact only you can provide.</p>
-      </div>
-      <div class="card">
-        <span class="tag">Result</span>
-        <h3>A baseline you operate</h3>
-        <p>A customized governance documentation baseline your team runs and maintains — not a compliance outcome, and not a finished programme.</p>
-      </div>
+    <div class="outs">
+      <div class="out"><b>Starting point — the architecture is designed</b><span>Documents that reference each other, a clause and article map, registers with working formulas, and an order of work.</span></div>
+      <div class="out"><b>Your work — you supply the company</b><span>Your systems, owners, decisions, risk appetite and processes. Bracketed placeholders mark every fact only you can provide.</span></div>
+      <div class="out"><b>Result — a baseline you operate</b><span>A customized governance documentation baseline your team runs and maintains. Not a compliance outcome, and not a finished programme.</span></div>
     </div>
 
     <div class="stack g20">
@@ -382,7 +370,7 @@
 
 <!-- ===== WHAT YOU GET, BY OUTCOME ===== -->
 <section id="inside">
-  <div class="wrap stack g40">
+  <div class="wrap stack g32">
     <div class="stack g12 narrow">
       <p class="eyebrow">What you get</p>
       <h2>Organized by the job, not by the file count.</h2>
@@ -460,7 +448,7 @@
 
 <!-- ===== PROOF ===== -->
 <section id="proof">
-  <div class="wrap stack g40">
+  <div class="wrap stack g32">
     <div class="stack g12 narrow">
       <p class="eyebrow">See the real thing</p>
       <h2>One row from the answer bank, exactly as it ships.</h2>
@@ -475,50 +463,31 @@
       <div class="sample-foot">Square brackets are the facts only you can supply. The document's own instruction is blunt about it: replace bracketed facts with your reality — never claim a control you do not operate.</div>
     </div>
 
-    <div class="cols cols-3">
-      <div class="card">
-        <span class="tag">Free, complete</span>
-        <h3>The four-way crosswalk</h3>
-        <p>ISO/IEC 42001 mapped to NIST AI RMF, the EU AI Act and ISO/IEC 27001. A whole file from the paid set. <a class="ilink" href="/iso-42001-crosswalk/">Read it</a> or <a class="ilink" href="https://annexwright.com/iso-42001-crosswalk/AW-P09-Four-Way-Framework-Crosswalk.xlsx">download the workbook</a>.</p>
+    <div class="outs">
+      <div class="out">
+        <b>Free, complete — the four-way crosswalk</b>
+        <span>ISO/IEC 42001 mapped to NIST AI RMF, the EU AI Act and ISO/IEC 27001. A whole file from the paid set. <a class="ilink" href="/iso-42001-crosswalk/">Read it</a> or <a class="ilink" href="https://annexwright.com/iso-42001-crosswalk/AW-P09-Four-Way-Framework-Crosswalk.xlsx">download the workbook</a>.</span>
       </div>
-      <div class="card">
-        <span class="tag">Free, complete</span>
-        <h3>The applicability checklist</h3>
-        <p>24 screening questions and an obligations calendar to 2028, covering the EU AI Act and the US state laws. <a class="ilink" href="https://annexwright.gumroad.com/l/checklist">Take it</a>.</p>
+      <div class="out">
+        <b>Free, complete — the applicability checklist</b>
+        <span>24 screening questions and an obligations calendar to 2028, covering the EU AI Act and the US state laws. <a class="ilink" href="https://annexwright.gumroad.com/l/checklist">Take it</a>.</span>
       </div>
-      <div class="card">
-        <span class="tag">Free reference</span>
-        <h3>The twenty questions</h3>
-        <p>The AI questions that now appear in enterprise questionnaires, and the artifact each answer has to rest on. <a class="ilink" href="/ai-security-questionnaire/">See them</a>.</p>
-      </div>
-    </div>
-
-    <div class="cols cols-2">
-      <div class="card">
-        <span class="tag">Traceable</span>
-        <h3>Every document names its clause</h3>
-        <p>The Statement of Applicability lists all 38 Annex A controls with a justification column — the document an auditor reads line by line.</p>
-      </div>
-      <div class="card">
-        <span class="tag">Working spreadsheets</span>
-        <h3>Formulas, dashboards, validation</h3>
-        <p>The risk register scores 41 risks into a 5×5 residual heat map. The gap assessment scores 65 requirements and returns a readiness percentage.</p>
-      </div>
-      <div class="card">
-        <span class="tag">How this edition was checked</span>
-        <h3>Edition 2026.1 — built September 2026</h3>
-        <p>Written after Regulation (EU) 2026/1744 moved the EU deadlines on 27 July 2026, with each regulatory position checked against the primary text. Anything written before August is wrong about which obligations bite when.</p>
-      </div>
-      <div class="card">
-        <span class="tag">Beyond Europe</span>
-        <h3>The US state laws, not just the AI Act</h3>
-        <p>Illinois HB 3773 and Texas TRAIGA are in force; Colorado and California's ADMT rules land in January 2027. Screened by the 24-question checklist.</p>
+      <div class="out">
+        <b>Free reference — the twenty questions</b>
+        <span>The AI questions that now appear in enterprise questionnaires, and the artifact each answer has to rest on. <a class="ilink" href="/ai-security-questionnaire/">See them</a>.</span>
       </div>
     </div>
 
     <details class="disclose">
-      <summary>The dates driving this — as at 7 September 2026</summary>
+      <summary>Why it holds up, and the dates driving it</summary>
       <div class="disclose-body" style="max-width:none">
+        <div class="outs" style="margin-bottom:26px">
+          <div class="out"><b>Every document names its clause</b><span>The Statement of Applicability lists all 38 Annex A controls with a justification column — the document an auditor reads line by line.</span></div>
+          <div class="out"><b>Formulas, dashboards, validation</b><span>The risk register scores 41 risks into a 5×5 residual heat map. The gap assessment scores 65 requirements and returns a readiness percentage.</span></div>
+          <div class="out"><b>Edition 2026.1 — built September 2026</b><span>Written after Regulation (EU) 2026/1744 moved the EU deadlines on 27 July 2026, each regulatory position checked against the primary text.</span></div>
+          <div class="out"><b>The US state laws, not just the AI Act</b><span>Illinois HB 3773 and Texas TRAIGA are in force; Colorado and California's ADMT rules land in January 2027.</span></div>
+        </div>
+        <p class="eyebrow" style="margin-bottom:12px">The dates driving this — as at 7 September 2026</p>
         <div class="dates">
           <div class="past"><span class="d">2 Aug 2026</span><span class="w"><b>Article 50 transparency</b> applies to generative and interactive AI.</span></div>
           <div><span class="d">2 Dec 2026</span><span class="w"><b>Machine-readable marking</b> grace period ends for systems already on the market.</span></div>
@@ -534,7 +503,7 @@
 
 <!-- ===== PRICING ===== -->
 <section id="pricing">
-  <div class="wrap stack g40">
+  <div class="wrap stack g32">
     <div class="stack g12 narrow">
       <p class="eyebrow">Pricing</p>
       <h2>One payment. Perpetual licence. 24 months of updates.</h2>
