@@ -179,6 +179,14 @@
          padding:3px 8px; border-radius:2px; background:var(--navy); color:var(--paper); font-weight:600}
   :root[data-theme="dark"] .badge, :root:not([data-theme="light"]) .badge{color:var(--navy-2)}
 
+  /* ---- closing line ---- */
+  .closingline{font-family:var(--serif); font-size:1.18rem; font-style:italic; color:var(--ink); line-height:1.4}
+
+  /* ---- secondary sections ---- */
+  #partners{padding:64px 0}
+  #about-honest{padding:72px 0}
+  @media (max-width:760px){#partners{padding:52px 0}#about-honest{padding:56px 0}}
+
   /* ---- service note ---- */
   .servicenote{display:flex; gap:20px; align-items:baseline; flex-wrap:wrap; justify-content:space-between;
                padding:20px 0 0; border-top:1px solid var(--line)}
@@ -356,51 +364,6 @@
   </div>
 </section>
 
-<!-- ===== L4 · PROOF: WHY IT HOLDS UP ===== -->
-<section id="quality">
-  <div class="wrap stack g40">
-    <div class="stack g12 narrow">
-      <p class="eyebrow">Why it holds up</p>
-      <h2>Built to survive the questions, not just fill a folder.</h2>
-    </div>
-    <div class="cols cols-2">
-      <div class="card">
-        <span class="tag">Traceable</span>
-        <h3>Every document names its clause</h3>
-        <p>The Statement of Applicability lists all 38 Annex A controls with a justification column — the document an auditor reads line by line.</p>
-      </div>
-      <div class="card">
-        <span class="tag">Working spreadsheets</span>
-        <h3>Formulas, dashboards, validation</h3>
-        <p>The risk register scores 41 risks into a 5×5 residual heat map. The gap assessment scores 65 requirements and returns a readiness percentage.</p>
-      </div>
-      <div class="card">
-        <span class="tag">Current</span>
-        <h3>Edition 2026.1 — built September 2026</h3>
-        <p>Written after Regulation (EU) 2026/1744 moved the EU deadlines on 27 July 2026. Anything written before August is wrong about which obligations bite when.</p>
-      </div>
-      <div class="card">
-        <span class="tag">Beyond Europe</span>
-        <h3>The US state laws, not just the AI Act</h3>
-        <p>Illinois HB 3773 and Texas TRAIGA are in force; Colorado and California's ADMT rules land in January 2027. Screened by a 24-question checklist with a calendar to 2028.</p>
-      </div>
-    </div>
-
-    <div class="stack g20">
-      <p class="eyebrow">The dates driving this — as at 7 September 2026</p>
-      <div class="dates">
-        <div class="past"><span class="d">2 Aug 2026</span><span class="w"><b>Article 50 transparency</b> applies to generative and interactive AI.</span></div>
-        <div><span class="d">2 Dec 2026</span><span class="w"><b>Machine-readable marking</b> grace period ends for systems already on the market.</span></div>
-        <div><span class="d">1 Jan 2027</span><span class="w"><b>Colorado SB 26-189</b>, <b>California ADMT</b> phase-in, New York's RAISE Act.</span></div>
-        <div><span class="d">2 Dec 2027</span><span class="w"><b>EU high-risk obligations</b> for Annex III — deferred, not cancelled.</span></div>
-        <div><span class="d">2 Aug 2028</span><span class="w"><b>Annex I</b> product-embedded AI obligations.</span></div>
-        <div><span class="d">Live now</span><span class="w"><b>Article 4 AI literacy</b>, and the enterprise questionnaires already landing in your inbox.</span></div>
-      </div>
-      <p class="small">Being asked AI questions in a customer security questionnaire? <a class="ilink" href="/ai-security-questionnaire/">See the twenty questions that turn up</a> and what each answer has to rest on — free, no email.</p>
-    </div>
-  </div>
-</section>
-
 <!-- ===== L5 · PRICING ===== -->
 <section id="pricing">
   <div class="wrap stack g40">
@@ -488,9 +451,56 @@
 
     <p class="small">Not sure yet? <a class="ilink" href="/iso-42001-crosswalk/">Take one complete document free</a> — the four-way crosswalk, in full, or <a class="ilink" href="https://annexwright.com/iso-42001-crosswalk/AW-P09-Four-Way-Framework-Crosswalk.xlsx">download the workbook directly</a>. Judge the standard of the work before you spend anything.</p>
 
+    <p class="closingline">Three months of drafting, or an afternoon of adapting.</p>
+
     <div class="servicenote">
       <p><strong>Would you rather not do it yourself?</strong> The Annex III Readiness Sprint is a five-day service: send one intake form describing one AI system and get the Professional set plus the core artefacts written around that system.</p>
       <a class="btn btn-ghost" href="https://annexwright.gumroad.com/l/vmgebv">Readiness Sprint — $2,450</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== L4 · PROOF: WHY IT HOLDS UP ===== -->
+<section id="quality">
+  <div class="wrap stack g40">
+    <div class="stack g12 narrow">
+      <p class="eyebrow">Why it holds up</p>
+      <h2>Built to survive the questions, not just fill a folder.</h2>
+    </div>
+    <div class="cols cols-2">
+      <div class="card">
+        <span class="tag">Traceable</span>
+        <h3>Every document names its clause</h3>
+        <p>The Statement of Applicability lists all 38 Annex A controls with a justification column — the document an auditor reads line by line.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Working spreadsheets</span>
+        <h3>Formulas, dashboards, validation</h3>
+        <p>The risk register scores 41 risks into a 5×5 residual heat map. The gap assessment scores 65 requirements and returns a readiness percentage.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Current</span>
+        <h3>Edition 2026.1 — built September 2026</h3>
+        <p>Written after Regulation (EU) 2026/1744 moved the EU deadlines on 27 July 2026. Anything written before August is wrong about which obligations bite when.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Beyond Europe</span>
+        <h3>The US state laws, not just the AI Act</h3>
+        <p>Illinois HB 3773 and Texas TRAIGA are in force; Colorado and California's ADMT rules land in January 2027. Screened by a 24-question checklist with a calendar to 2028.</p>
+      </div>
+    </div>
+
+    <div class="stack g20">
+      <p class="eyebrow">The dates driving this — as at 7 September 2026</p>
+      <div class="dates">
+        <div class="past"><span class="d">2 Aug 2026</span><span class="w"><b>Article 50 transparency</b> applies to generative and interactive AI.</span></div>
+        <div><span class="d">2 Dec 2026</span><span class="w"><b>Machine-readable marking</b> grace period ends for systems already on the market.</span></div>
+        <div><span class="d">1 Jan 2027</span><span class="w"><b>Colorado SB 26-189</b>, <b>California ADMT</b> phase-in, New York's RAISE Act.</span></div>
+        <div><span class="d">2 Dec 2027</span><span class="w"><b>EU high-risk obligations</b> for Annex III — deferred, not cancelled.</span></div>
+        <div><span class="d">2 Aug 2028</span><span class="w"><b>Annex I</b> product-embedded AI obligations.</span></div>
+        <div><span class="d">Live now</span><span class="w"><b>Article 4 AI literacy</b>, and the enterprise questionnaires already landing in your inbox.</span></div>
+      </div>
+      <p class="small">Being asked AI questions in a customer security questionnaire? <a class="ilink" href="/ai-security-questionnaire/">See the twenty questions that turn up</a> and what each answer has to rest on — free, no email.</p>
     </div>
   </div>
 </section>
@@ -542,6 +552,10 @@
         <div class="disclose-body">Word, Excel and PowerPoint. Fully editable, no watermarks, no locked cells, no PDF-only files. The spreadsheets use standard formulas that work in Excel, Google Sheets and LibreOffice.</div>
       </details>
       <details class="disclose">
+        <summary>Who is behind this, and do you have customers?</summary>
+        <div class="disclose-body">Annexwright is an independent product studio and launched in September 2026. The documents were drafted with AI assistance against the published standards and legislation, and every regulatory position was checked against primary sources. It is <strong>not legal advice</strong>, it is not a certification body, nobody has audited or endorsed it, and it will not make anyone compliant on its own — it is a drafting foundation you adapt. There are no customer logos on this site because there are no customers yet. That is exactly why a complete document is free: judge the work rather than the vendor.</div>
+      </details>
+      <details class="disclose">
         <summary>What if it isn't right for us?</summary>
         <div class="disclose-body">Email <a class="ilink" href="mailto:hello@annexwright.com">hello@annexwright.com</a> within 30 days and you get a full refund. You keep the files.</div>
       </details>
@@ -549,26 +563,12 @@
   </div>
 </section>
 
-<!-- ===== CLOSE ===== -->
-<section class="close">
-  <div class="wrap stack g24 narrow">
-    <h2>Three months of drafting, or an afternoon of adapting.</h2>
-    <p class="lede">Start with Professional if certification or an enterprise deal is in play. Start with Essentials if you need the policy, the inventory and the training in place this week.</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="https://annexwright.gumroad.com/l/professional">Get Professional — $397</a>
-      <a class="btn btn-ghost" href="https://annexwright.gumroad.com/l/essentials">Start with Essentials — $149</a>
-    </div>
-  </div>
-</section>
-
 <!-- ===== PARTNERS ===== -->
 <section id="partners">
-  <div class="wrap stack g16 narrow">
+  <div class="wrap stack g12 narrow">
     <p class="eyebrow">For consultants, trainers and newsletter authors</p>
-    <h2>Refer it, or deliver with it.</h2>
-    <p class="lede"><strong>Refer it.</strong> 30% on every sale — $44.70 on Essentials, $119.10 on Professional, $269.10 on the Consultant licence. Gumroad handles tracking and payment. <a class="ilink" href="https://annexwright.gumroad.com/affiliates">Sign up here</a>.</p>
-    <p class="lede"><strong>Deliver with it.</strong> The Consultant licence at $897 lets you rebrand every document as your own and use it with unlimited clients, perpetually. It does not permit reselling the toolkit as a template product.</p>
-    <p class="small">Either way, ask and I will send you the full set free to evaluate first — you should not put your name near something you have not read. <a class="ilink" href="mailto:hello@annexwright.com">hello@annexwright.com</a></p>
+    <p class="small"><strong>Refer it.</strong> 30% on every sale — $44.70 on Essentials, $119.10 on Professional, $269.10 on the Consultant licence, tracked and paid by Gumroad. <a class="ilink" href="https://annexwright.gumroad.com/affiliates">Sign up here</a>.</p>
+    <p class="small"><strong>Deliver with it.</strong> The Consultant licence at $897 lets you rebrand every document as your own and use it with unlimited clients, perpetually. It does not permit reselling the toolkit as a template product. Ask and I will send you the full set free to evaluate first — <a class="ilink" href="mailto:hello@annexwright.com">hello@annexwright.com</a>.</p>
   </div>
 </section>
 
@@ -577,9 +577,11 @@
   <div class="wrap stack g16 narrow">
     <p class="eyebrow">Who is behind this</p>
     <h2>An independent product studio.</h2>
-    <p class="lede">Annexwright launched in September 2026. The documents were drafted with AI assistance against the published standards and legislation, and every regulatory position was checked against primary sources.</p>
-    <p class="lede">It is <strong>not legal advice</strong>, it is not a certification body, nobody has audited or endorsed it, and it will not make anyone compliant on its own — it is a drafting foundation you adapt. There are no customer logos on this page because there are no customers yet. That is exactly why the applicability checklist is free and complete: judge the work rather than the vendor.</p>
-    <p><a class="btn btn-primary" href="https://annexwright.gumroad.com/l/checklist">Download the free checklist</a></p>
+    <p class="lede">Annexwright builds editable document systems for work that is governed by an external rulebook. The first covers AI governance: ISO/IEC 42001, the EU AI Act and US state AI law, drafted against the published standards and legislation and checked against primary sources.</p>
+    <p class="small">It is not legal advice and it will not make anyone compliant on its own. <a class="ilink" href="#faq">The full picture is in the FAQ</a>.</p>
+    <div class="cta-row" style="margin-top:8px">
+      <a class="btn btn-primary" href="https://annexwright.gumroad.com/l/checklist">Download the free checklist</a>
+    </div>
   </div>
 </section>
 
