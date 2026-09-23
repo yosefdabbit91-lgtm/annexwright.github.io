@@ -5,12 +5,12 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Annexwright — ISO/IEC 42001 &amp; EU AI Act governance documentation</title>
+<title>Annexwright — the documentation behind your AI governance answers</title>
 <link rel="canonical" href="https://annexwright.com/">
 <meta name="robots" content="index,follow">
-<meta name="description" content="Annexwright — editable ISO/IEC 42001, EU AI Act and US state law governance documentation. Free regulatory applicability checklist; toolkits from $149.">
-<meta property="og:title" content="Annexwright — AI Governance Toolkit">
-<meta property="og:description" content="Work out which AI laws apply to you in twenty minutes. Free checklist, then editable Word/Excel/PowerPoint governance documents from $149.">
+<meta name="description" content="When a customer asks how you govern AI, have the documentation behind the answer. Editable policies, registers, assessments and evidence structure — ISO/IEC 42001 and EU AI Act. Free complete document; sets from $149.">
+<meta property="og:title" content="Annexwright — have the system behind the answer">
+<meta property="og:description" content="Your customer asked how you govern AI. Annexwright gives you the editable policies, registers, assessments and documentation structure behind the answer. Free complete document, no email required.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://annexwright.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -101,7 +101,9 @@
 
   /* ---- compact alternatives ---- */
   .alts{display:grid; grid-template-columns:repeat(3,1fr); gap:28px}
-  @media (max-width:820px){.alts{grid-template-columns:1fr; gap:20px}}
+  .alts-4{grid-template-columns:repeat(4,1fr); gap:24px}
+  @media (max-width:1000px){.alts-4{grid-template-columns:repeat(2,1fr); gap:22px}}
+  @media (max-width:820px){.alts{grid-template-columns:1fr; gap:20px}.alts-4{grid-template-columns:1fr; gap:18px}}
   .alt{display:flex; flex-direction:column; gap:6px; padding-top:14px; border-top:2px solid var(--line-strong)}
   .alt b{font-size:.97rem; font-weight:700}
   .alt span{font-size:.92rem; color:var(--ink-2); line-height:1.5}
@@ -209,6 +211,13 @@
   footer .fbrand{font-family:var(--serif); font-size:1rem; font-weight:700; color:var(--ink); display:block; margin-bottom:4px}
   @media (prefers-reduced-motion: reduce){*{transition:none !important; animation:none !important; scroll-behavior:auto}}
 
+  /* ---- before state ---- */
+  .before{display:grid; grid-template-columns:96px 1fr; gap:16px; align-items:baseline; padding:14px 0 16px; border-bottom:1px solid var(--line)}
+  @media (max-width:720px){.before{grid-template-columns:1fr; gap:4px}}
+  .before .lbl{font-family:var(--mono); font-size:.66rem; letter-spacing:.14em; text-transform:uppercase; color:var(--crimson); font-weight:600}
+  .before .txt{font-size:.95rem; color:var(--ink-2); line-height:1.55}
+  .before .txt em{font-style:italic; color:var(--ink)}
+
   /* ---- flow ---- */
   .flow{display:grid; grid-template-columns:repeat(5,1fr); border:1px solid var(--line); border-radius:4px; overflow:hidden; background:var(--surface)}
   @media (max-width:880px){.flow{grid-template-columns:1fr}}
@@ -285,7 +294,12 @@
       </div>
     </div>
 
-    <div class="flow" style="margin-top:12px">
+    <div class="before">
+      <span class="lbl">Today</span>
+      <span class="txt">&ldquo;We use AI responsibly.&rdquo; &mdash; and then: no inventory, no named owner, no risk record, nothing to attach when the reviewer says <em>please send it over</em>.</span>
+    </div>
+
+    <div class="flow">
       <div class="fs"><span class="n">01 · They ask</span><span class="t">The enterprise question</span><span class="d">"Do you have an AI governance policy approved by senior management?"</span></div>
       <div class="fs"><span class="n">02 · You answer</span><span class="t">The answer bank</span><span class="d">A pre-written, factual answer you edit to match your reality.</span></div>
       <div class="fs"><span class="n">03 · It rests on</span><span class="t">The governance artifact</span><span class="d">Policy, inventory, risk register, impact assessment, oversight procedure.</span></div>
@@ -330,10 +344,11 @@
     </div>
     <p class="small narrow">Illustrative situations, not customer quotes. Annexwright launched in September 2026 and has no case studies to show you yet.</p>
 
-    <div class="alts">
-      <div class="alt"><b>Hire a consultant</b><span>You get judgement tailored to you, at professional day rates, and you wait for the first draft.</span></div>
-      <div class="alt"><b>Build it from scratch</b><span>You keep full control of every word, and you spend the reading and drafting time yourself.</span></div>
-      <div class="alt"><b>Ask an AI to write it</b><span>You get prose in minutes, without a clause map, an evidence structure or a reason to trust the citations.</span></div>
+    <div class="alts alts-4">
+      <div class="alt"><b>Ask an AI to write it</b><span>Prose in minutes. What you do not get is a system: documents that reference each other, a clause map, evidence pointers, registers that calculate, and an order of work.</span></div>
+      <div class="alt"><b>Collect free templates</b><span>Free templates solve one document at a time. Nothing connects the policy to the inventory, the inventory to the risk register, or any of it to an answer.</span></div>
+      <div class="alt"><b>Hire a consultant</b><span>Judgement tailored to you, and the right call when the question is genuinely hard — at professional day rates, and you wait for the first draft.</span></div>
+      <div class="alt"><b>Build it from scratch</b><span>Full control of every word. You also do the reading, the clause mapping and the architecture before you write a line.</span></div>
     </div>
   </div>
 </section>
@@ -458,9 +473,12 @@
     <div class="sample">
       <div class="sample-head"><span>AW-E17 · Enterprise AI Questionnaire Answer Bank · §1 Governance</span><span>Essentials</span></div>
       <div class="srow"><span class="lbl">Question</span><span class="val">Do you have an AI governance policy approved by senior management?</span></div>
-      <div class="srow"><span class="lbl">Answer</span><span class="val">Yes. Our AI Governance Policy is approved by [CEO] and reviewed annually. It defines principles, roles, a risk-tiering model and mandatory controls for all AI systems we build, buy or use, and is aligned with ISO/IEC 42001:2023.</span></div>
+      <div class="srow"><span class="lbl">Starting answer</span><span class="val">Yes. Our AI Governance Policy is approved by [CEO] and reviewed annually. It defines principles, roles, a risk-tiering model and mandatory controls for all AI systems we build, buy or use, and is aligned with ISO/IEC 42001:2023.</span></div>
       <div class="srow"><span class="lbl">What it rests on</span><span class="val ev">AW-E02 AI Governance Policy (signed)</span></div>
-      <div class="sample-foot">Square brackets are the facts only you can supply. The document's own instruction is blunt about it: replace bracketed facts with your reality — never claim a control you do not operate.</div>
+      <div class="srow"><span class="lbl">Question</span><span class="val">Do you maintain an inventory of AI systems?</span></div>
+      <div class="srow"><span class="lbl">Starting answer</span><span class="val">Yes. Every AI system, including third-party models and AI features in SaaS tools, is registered in our AI System Inventory with an owner, purpose, data classes, risk tier and review date. The inventory is reviewed monthly.</span></div>
+      <div class="srow"><span class="lbl">What it rests on</span><span class="val ev">AW-E06 AI System Inventory Register</span></div>
+      <div class="sample-foot">That second answer is only true if the register exists and carries those fields — owner, purpose, data classes, risk tier, review date. That is the point: the answer and the artifact behind it are built as one thing. Square brackets are the facts only you can supply. The document's own instruction is blunt about it: replace bracketed facts with your reality — never claim a control you do not operate.</div>
     </div>
 
     <div class="outs">
@@ -616,6 +634,18 @@
       <details class="disclose">
         <summary>Is this just ChatGPT output?</summary>
         <div class="disclose-body">The file list and the sample above are the test. The Statement of Applicability carries 38 controls with correct identifiers from A.2.2 to A.10.4, each with a purpose, a suggested implementation and an evidence pointer. The risk register holds 41 risks with inherent and residual scoring and a working heat map. Generic AI output does not survive that specificity — which is why the manifest is published rather than hidden behind a form.</div>
+      </details>
+      <details class="disclose">
+        <summary>Why not just ask ChatGPT or Claude to write these?</summary>
+        <div class="disclose-body">You can, and for a single policy it will produce something readable in minutes. The difference is not human versus AI — these documents were drafted with AI assistance too. The difference is generated text versus a structured system. A governance system needs documents that reference each other, controls mapped to clauses you can cite, answers that point at the artifact behind them, registers that calculate rather than describe, and an order of work that tells you what to do first. A model asked for "an AI governance policy" gives you prose; it does not give you the architecture, and it will invent clause numbers that an auditor checks. What you would be buying here is the design of the system, already done and already checked against the primary texts.</div>
+      </details>
+      <details class="disclose">
+        <summary>Free templates exist. Why pay?</summary>
+        <div class="disclose-body">Free templates solve one document at a time, which is genuinely useful if one document is what you need. What they do not do is connect: the policy to the inventory, the inventory to the risk register, the register to the impact assessment, and all of it to the answer you give a customer. Assembling that yourself is the work. If you want to test the quality before spending anything, one complete file from the paid set is free on this site with no email required.</div>
+      </details>
+      <details class="disclose">
+        <summary>Why $149? It's twenty files.</summary>
+        <div class="disclose-body">Not because there are twenty files — another vendor will always claim more. Because the documentation architecture has already been designed: what each document contains, how they reference each other, which ISO/IEC 42001 clause or regulatory article each one satisfies, which registers calculate what, and the sequence you work through them in. The file count is evidence that the system is substantial, not the reason for the price.</div>
       </details>
       <details class="disclose">
         <summary>We already have ISO/IEC 27001. Is this redundant?</summary>
