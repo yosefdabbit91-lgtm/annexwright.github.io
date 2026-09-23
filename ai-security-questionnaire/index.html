@@ -1,71 +1,198 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The AI questions in enterprise security questionnaires (2026) — and what each answer needs</title>
-<meta name="description" content="The 20 AI questions now appearing in enterprise security and vendor procurement questionnaires, and the document each answer has to rest on. Updated September 2026 for the EU AI Act as amended by the Digital Omnibus.">
 <link rel="canonical" href="https://annexwright.com/ai-security-questionnaire/">
 <meta name="robots" content="index,follow">
+<meta name="description" content="The 20 AI questions now appearing in enterprise security and vendor procurement questionnaires, the document each answer has to rest on, and three real rows from an answer bank showing question, starting answer, supporting artifact and the record that proves it.">
+<meta property="og:title" content="The AI questions in enterprise security questionnaires (2026) — and what each answer needs">
+<meta property="og:description" content="The 20 AI questions now appearing in enterprise security and vendor procurement questionnaires, the document each answer has to rest on, and three real rows from an answer bank showing question, starting answer, supporting artifact and the record that proves it.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://annexwright.com/ai-security-questionnaire/">
+<meta property="og:image" content="https://annexwright.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Annexwright — the editable policies, registers, assessments and documentation structure behind your AI governance answers.">
+<meta property="og:site_name" content="Annexwright">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The AI questions in enterprise security questionnaires (2026) — and what each answer needs">
+<meta name="twitter:description" content="The 20 AI questions now appearing in enterprise security and vendor procurement questionnaires, the document each answer has to rest on, and three real rows from an answer bank showing question, starting answer, supporting artifact and the record that proves it.">
+<meta name="twitter:image" content="https://annexwright.com/og-image.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <style>
-:root{--ink:#0E2138;--mut:#5b6b80;--line:#d7dee7;--accent:#1f6f78}
-*{box-sizing:border-box}
-body{margin:0;background:#fff;color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-.wrap{max-width:900px;margin:0 auto;padding:32px 20px 72px}
-h1{font-size:2rem;line-height:1.2;margin:.2em 0 .3em}
-h2{font-size:1.3rem;margin:2.2em 0 .5em}
-h3{font-size:1.05rem;margin:1.8em 0 .4em}
-.lede{font-size:1.06rem;color:var(--mut)}
-.eyebrow{font:600 .72rem/1 ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
-.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:8px;margin:10px 0 18px}
-table{border-collapse:collapse;width:100%;min-width:620px;font-size:.9rem}
-th,td{text-align:left;vertical-align:top;padding:10px 13px;border-bottom:1px solid var(--line)}
-th{background:#0E2138;color:#fff;font-weight:600}
-tr:nth-child(even) td{background:#fafbfc}
+:root{--paper:#F3F5F8;--surface:#FFFFFF;--surface-2:#EAEEF3;--ink:#111820;--ink-2:#37444F;--muted:#63727F;
+--line:#D6DDE5;--line-strong:#B8C4CF;--navy:#16324F;--navy-2:#0E2138;--crimson:#A4122F;--teal:#25707C;
+--serif:"Spectral",Georgia,"Times New Roman",serif;--sans:"Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+--mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;--wrap:860px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0D1319;--surface:#151D25;--surface-2:#1D2831;--ink:#EDF1F5;--ink-2:#C3CDD6;
+--muted:#8A99A6;--line:#27333D;--line-strong:#3A4854;--navy:#9FC0DE;--navy-2:#0A1119;--crimson:#F0798E;--teal:#63BECB}}
+*{box-sizing:border-box}html,body{margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+a{color:inherit}.ilink{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+h1,h2,h3{margin:0;text-wrap:balance}
+h1{font-family:var(--serif);font-weight:700;font-size:clamp(1.9rem,4.2vw,2.7rem);line-height:1.1;letter-spacing:-.015em}
+h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.35rem,2.4vw,1.75rem);line-height:1.2;margin:44px 0 14px}
+h3{font-family:var(--sans);font-weight:700;font-size:1.02rem;margin:26px 0 8px}
+p{margin:0 0 16px}ul,ol{margin:0 0 16px;padding-left:22px}li{margin:0 0 8px}
+.eyebrow{font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:500;margin:0 0 10px}
+.lede{font-size:1.12rem;color:var(--ink-2);margin:0 0 18px}
+.small{font-size:.9rem;color:var(--muted);line-height:1.55}
+.masthead{background:var(--navy-2);color:#EDF1F5;padding:16px 0}
+.masthead .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;max-width:1120px}
+.brand{font-family:var(--serif);font-size:1.2rem;font-weight:700;text-decoration:none}
+.masthead nav{display:flex;gap:22px;font-size:.9rem;color:#C6D4E2;flex-wrap:wrap}
+.masthead nav a{text-decoration:none}.masthead nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.crumbs{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:22px 0 0}
+main{padding:14px 0 40px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.97rem;padding:13px 22px;border-radius:3px;
+text-decoration:none;border:1px solid transparent;transition:transform .12s ease}
+.btn-primary{background:var(--navy);color:var(--surface);border-color:var(--navy)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn-primary{color:var(--navy-2)}}
+.btn-primary:hover{transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-strong)}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:8px 0 6px}
+.box{border:1px solid var(--line);border-radius:4px;background:var(--surface);padding:22px;margin:24px 0}
+.box h3{margin-top:0}
+.rule{border-left:2px solid var(--crimson);padding:2px 0 2px 18px;margin:22px 0}
+.sample{border:1px solid var(--line);border-radius:4px;overflow:hidden;background:var(--surface);margin:22px 0}
+.sample-head{padding:10px 16px;background:var(--surface-2);border-bottom:1px solid var(--line);font-family:var(--mono);
+font-size:.66rem;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-2);font-weight:600}
+.srow{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:13px 16px;border-top:1px solid var(--line);align-items:baseline}
+.srow:first-of-type{border-top:none}
+@media (max-width:640px){.srow{grid-template-columns:1fr;gap:3px}}
+.srow .lbl{font-family:var(--mono);font-size:.65rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.srow .val{font-size:.94rem;color:var(--ink);line-height:1.55}
+.srow .val.ev{font-family:var(--mono);font-size:.85rem;color:var(--teal)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:18px 0}
+@media (max-width:720px){.grid2{grid-template-columns:1fr;gap:16px}}
+.gitem{border-top:2px solid var(--line-strong);padding-top:13px}
+.gitem b{display:block;font-size:.96rem;margin-bottom:4px}
+.gitem span{font-size:.9rem;color:var(--ink-2);line-height:1.5}
+details{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+details+details{border-top:none}
+details>summary{list-style:none;cursor:pointer;padding:16px 0;display:flex;justify-content:space-between;gap:18px;font-weight:600;font-size:.98rem}
+details>summary::-webkit-details-marker{display:none}
+details>summary::after{content:"+";font-family:var(--mono);color:var(--muted)}
+details[open]>summary::after{content:"\2212"}
+details .body{padding:0 0 18px;font-size:.94rem;color:var(--ink-2);max-width:700px}
+.pricebar{display:flex;gap:26px;flex-wrap:wrap;align-items:baseline;font-family:var(--mono);margin:6px 0 16px}
+.pricebar b{font-size:1.5rem;color:var(--ink)}
+.pricebar span{font-size:.8rem;color:var(--muted)}
+.method{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;margin-top:38px}
+.method a{color:inherit}
+footer{border-top:1px solid var(--line);padding:30px 0 50px;font-size:.82rem;color:var(--muted);margin-top:30px}
+footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;max-width:1120px}
+footer .fb{font-family:var(--serif);font-size:1rem;font-weight:700;color:var(--ink);display:block;margin-bottom:4px}
+.related{display:flex;gap:14px;flex-wrap:wrap;margin:10px 0 0;font-size:.92rem}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://annexwright.com/#org","name":"Annexwright","url":"https://annexwright.com/","logo":"https://annexwright.com/apple-touch-icon.png","email":"hello@annexwright.com","description":"Independent product studio publishing editable ISO/IEC 42001 and EU AI Act governance documentation systems."},{"@type":"Article","headline":"The AI questions in enterprise security questionnaires \u2014 and what each answer has to rest on","description":"The twenty AI questions that appear in enterprise security and procurement questionnaires, and the governance artifact each answer depends on.","mainEntityOfPage":"https://annexwright.com/ai-security-questionnaire/","image":"https://annexwright.com/og-image.png","author":{"@type":"Person","name":"Yosef Dabbit","url":"https://annexwright.com/#about-honest"},"publisher":{"@id":"https://annexwright.com/#org"},"datePublished":"2026-09-23","dateModified":"2026-09-23","inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Annexwright","item":"https://annexwright.com/"},{"@type":"ListItem","position":2,"name":"The AI questions in enterprise security questionnaires \u2014 and what each answer has to rest on","item":"https://annexwright.com/ai-security-questionnaire/"}]}]}</script>
+</head>
+<body>
+<header class="masthead"><div class="wrap"><a class="brand" href="/">Annexwright</a><nav><a href="/essentials/">Essentials</a><a href="/professional/">Professional</a><a href="/consultant/">Consultant</a><a href="/ai-security-questionnaire/">Questionnaire</a><a href="/#pricing">Pricing</a></nav></div></header>
+<div class="wrap"><p class="crumbs"><a class="ilink" href="/">Annexwright</a> / AI security questionnaire</p></div>
+<main><div class="wrap">
+
+<style>
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:4px;margin:10px 0 22px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.9rem}
+th,td{text-align:left;vertical-align:top;padding:10px 14px;border-bottom:1px solid var(--line)}
+th{background:var(--surface-2);color:var(--ink);font-weight:600;font-family:var(--mono);font-size:.68rem;
+letter-spacing:.1em;text-transform:uppercase}
 td:first-child{font-weight:600;width:46%}
-.ex{border-left:3px solid var(--accent);background:#f5f8fa;padding:14px 18px;margin:16px 0;font-size:.94rem}
-.ex p{margin:.4em 0}
-.cta{border:1px solid var(--line);border-radius:10px;padding:22px;margin:34px 0;background:#f9fbfc}
-.btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;padding:11px 18px;border-radius:7px;font-weight:600;margin-top:6px}
-a{color:var(--accent)} footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);color:var(--mut);font-size:.85rem}
-</style></head>
-<body><div class="wrap">
+tr:last-child td{border-bottom:none}
+</style>
 <p class="eyebrow">Free reference · Annexwright</p>
 <h1>The AI questions in enterprise security questionnaires — and what each answer has to rest on</h1>
-<p class="lede">Enterprise security reviews and vendor procurement questionnaires added an AI section in 2025–26. These are the twenty questions that actually turn up, grouped the way questionnaires group them. The second column is the part that catches people out: each answer only survives follow-up if there is a document behind it.</p>
+<p class="lede">Enterprise security reviews and vendor procurement questionnaires added an AI section in 2025&ndash;26. These are
+the twenty questions that actually turn up, grouped the way questionnaires group them. The second column is the part that
+catches people out: each answer only survives follow-up if there is a document behind it.</p>
+<p class="small">Written by Yosef Dabbit, Annexwright · Published 2026-09-23 · Last reviewed 2026-09-23 · Edition 2026.1</p>
+
+<div class="box"><h3>If a questionnaire is open on your desk right now</h3>
+<p>Work through the twenty questions below and mark every one where you could not attach the supporting document today.
+That list is your actual gap. The documents that close it are in
+<a class="ilink" href="/essentials/">Essentials, $149</a> — including the answer bank these examples come from.</p>
+<div class="cta-row"><a class="btn btn-primary" href="/essentials/">See what closes the gaps — $149</a>
+<a class="btn btn-ghost" href="https://annexwright.gumroad.com/l/checklist">Free: which laws apply to you</a></div></div>
 
 <h2>Why the second column matters more than the first</h2>
-<p>Most vendors can improvise an answer to any single question here. The problem arrives one email later, when the reviewer asks to see the thing the answer described. "Yes, we maintain an AI inventory" becomes "please attach it." An answer without an artefact behind it reads as a claim, and claims slow deals down.</p>
-<p>So the useful preparation is not drafting answers. It is knowing which document each answer points at, and having that document exist before the questionnaire arrives.</p>
+<p>Most vendors can improvise an answer to any single question here. The problem arrives one email later, when the reviewer
+asks to see the thing the answer described. "Yes, we maintain an AI inventory" becomes "please attach it." An answer without an
+artifact behind it reads as a claim, and claims slow deals down.</p>
+<p>So the useful preparation is not drafting answers. It is knowing which document each answer points at, and having that
+document exist before the questionnaire arrives. <a class="ilink" href="/ai-governance-evidence/">That chain — question,
+answer, artifact, record — is set out in full here.</a></p>
 
+<h2>The twenty questions</h2>
 <h3>1. Governance</h3><div class="scroll"><table><thead><tr><th>The question</th><th>What your answer has to rest on</th></tr></thead><tbody><tr><td>Do you have an AI governance policy approved by senior management?</td><td>a signed AI governance policy</td></tr><tr><td>Who is accountable for AI governance?</td><td>a named accountable owner, not a department</td></tr><tr><td>Are you ISO/IEC 42001 certified or aligned?</td><td>a signed AI governance policy; an implementation plan</td></tr><tr><td>Do you maintain an inventory of AI systems?</td><td>an AI system inventory covering third-party models and AI features inside SaaS tools</td></tr><tr><td>Which regulations govern your AI use and how do you comply?</td><td>a per-system regulatory applicability assessment</td></tr></tbody></table></div>
 <h3>2. Risk and impact management</h3><div class="scroll"><table><thead><tr><th>The question</th><th>What your answer has to rest on</th></tr></thead><tbody><tr><td>How do you assess AI risk?</td><td>a scored AI risk register; an impact assessment with prohibited-practice and high-risk screens</td></tr><tr><td>Do you test for bias or fairness?</td><td>an impact assessment with prohibited-practice and high-risk screens</td></tr><tr><td>Do you use AI for decisions about individuals?</td><td>a documented human oversight procedure</td></tr><tr><td>How do you manage AI incidents?</td><td>an AI incident response procedure and log</td></tr></tbody></table></div>
 <h3>3. Data</h3><div class="scroll"><table><thead><tr><th>The question</th><th>What your answer has to rest on</th></tr></thead><tbody><tr><td>Is customer data used to train AI models?</td><td>a generative AI usage standard; your vendor contract terms</td></tr><tr><td>What data is sent to third-party AI providers?</td><td>a generative AI usage standard; a data governance procedure for AI</td></tr><tr><td>Which AI sub-processors do you use?</td><td>a published sub-processor list</td></tr><tr><td>How do you ensure data quality and provenance for AI?</td><td>a data governance procedure for AI</td></tr></tbody></table></div>
 <h3>4. Security</h3><div class="scroll"><table><thead><tr><th>The question</th><th>What your answer has to rest on</th></tr></thead><tbody><tr><td>How do you protect against prompt injection and data exfiltration?</td><td>an impact assessment with prohibited-practice and high-risk screens; a generative AI usage standard</td></tr><tr><td>Are AI tools covered by your access control and logging?</td><td>a generative AI usage standard</td></tr><tr><td>Do you monitor AI systems in production?</td><td>a documented human oversight procedure</td></tr></tbody></table></div>
 <h3>5. Transparency and people</h3><div class="scroll"><table><thead><tr><th>The question</th><th>What your answer has to rest on</th></tr></thead><tbody><tr><td>Do you disclose AI use to end users?</td><td>transparency and disclosure notices</td></tr><tr><td>Can your customers turn off AI features?</td><td>your product documentation</td></tr><tr><td>Are your staff trained on responsible AI?</td><td>AI literacy training records</td></tr><tr><td>How do you vet AI vendors?</td><td>a vendor due diligence questionnaire</td></tr></tbody></table></div>
 
-<h2>Two worked examples</h2>
-<p>What a defensible answer looks like when there is a document behind it:</p>
-<div class="ex">
-<p><strong>Q. Do you maintain an inventory of AI systems?</strong></p>
-<p>Yes. Every AI system, including third-party models and AI features in SaaS tools, is registered in our AI System Inventory with an owner, purpose, data classes, risk tier and review date. The inventory is reviewed monthly.</p>
-<p style="color:#5b6b80"><em>Rests on: an AI system inventory register. Note the scope — third-party models and AI features inside SaaS tools are where most inventories are incomplete.</em></p>
-</div>
-<div class="ex">
-<p><strong>Q. How do you assess AI risk?</strong></p>
-<p>We maintain an AI Risk Register scored on likelihood and impact with defined treatment and acceptance thresholds, reviewed quarterly. Each Limited- or High-tier system also undergoes an AI Impact Assessment before deployment and on material change, covering prohibited-practice and high-risk screens, affected persons, harms, mitigations and residual risk.</p>
-<p style="color:#5b6b80"><em>Rests on: a scored risk register and an impact assessment. The phrase that does the work is "before deployment and on material change" — it describes a process, not a one-off.</em></p>
-</div>
+<h2>What a supported answer looks like</h2>
+<p>Three rows from AW-E17, the Enterprise AI Questionnaire Answer Bank, exactly as they ship. The fourth line in each is the
+part reviewers actually escalate to: the record that proves the artifact is live rather than shelved.</p>
 
-<h2>One thing worth getting right first</h2>
-<p>Before answering anything, establish your role. A <strong>provider</strong> and a <strong>deployer</strong> of the same AI system carry different duties under the EU AI Act, and answering as the wrong one makes the rest of the questionnaire inconsistent. Under the Digital Omnibus (Regulation (EU) 2026/1744, in force 27 July 2026), Article 50 transparency duties have applied since 2 August 2026, machine-readable marking has a grace period to 2 December 2026, and Annex III high-risk obligations were deferred to 2 December 2027.</p>
-
-<div class="cta">
-<h2 style="margin-top:0">The answers, and the documents behind them</h2>
-<p>Annexwright Essentials contains the full answer bank — pre-written answers to all twenty questions, each cross-referenced to the document that evidences it, plus an evidence pack checklist. And the twenty documents themselves: AI governance policy, system inventory register, risk register with 41 pre-seeded AI risks, impact assessment, vendor due diligence, incident response, human oversight procedure, transparency notices and an AI literacy training deck.</p>
-<a class="btn" href="https://gum.co/u/gwbizywn">Annexwright Essentials — $149</a>
-<p style="margin:16px 0 0;font-size:.92rem;color:#5b6b80">Prefer to judge the quality first? <a href="https://annexwright.com/iso-42001-crosswalk/">Take one complete document free</a> — no email required.</p>
+<div class="sample">
+<div class="sample-head">AW-E17 · §1 Governance</div>
+<div class="srow"><span class="lbl">Question</span><span class="val">Do you have an AI governance policy approved by senior management?</span></div>
+<div class="srow"><span class="lbl">Starting answer</span><span class="val">Yes. Our AI Governance Policy is approved by [CEO]
+and reviewed annually. It defines principles, roles, a risk-tiering model and mandatory controls for all AI systems we build,
+buy or use, and is aligned with ISO/IEC 42001:2023.</span></div>
+<div class="srow"><span class="lbl">Supporting artifact</span><span class="val ev">AW-E02 AI Governance Policy (signed)</span></div>
+<div class="srow"><span class="lbl">Record that proves it</span><span class="val">An approval signature with a date, and the
+date of the last annual review.</span></div>
 </div>
 
-<footer>
-<p>Published by <a href="https://annexwright.com/">Annexwright</a>. This page is a free reference, not legal advice, and documentation alone does not make an organisation compliant. Questions or corrections: <a href="mailto:hello@annexwright.com">hello@annexwright.com</a>.</p>
-</footer>
-</div></body></html>
+<div class="sample">
+<div class="sample-head">AW-E17 · §1 Governance</div>
+<div class="srow"><span class="lbl">Question</span><span class="val">Do you maintain an inventory of AI systems?</span></div>
+<div class="srow"><span class="lbl">Starting answer</span><span class="val">Yes. Every AI system, including third-party models
+and AI features in SaaS tools, is registered in our AI System Inventory with an owner, purpose, data classes, risk tier and
+review date. The inventory is reviewed monthly.</span></div>
+<div class="srow"><span class="lbl">Supporting artifact</span><span class="val ev">AW-E06 AI System Inventory Register</span></div>
+<div class="srow"><span class="lbl">Record that proves it</span><span class="val">Populated rows with named owners and review
+dates that are not in the past. Note the scope: third-party models and AI features inside SaaS tools are where most
+inventories are incomplete.</span></div>
+</div>
+
+<div class="sample">
+<div class="sample-head">AW-E17 · §2 Risk and impact management</div>
+<div class="srow"><span class="lbl">Question</span><span class="val">How do you assess AI risk?</span></div>
+<div class="srow"><span class="lbl">Starting answer</span><span class="val">We maintain an AI Risk Register scored on likelihood
+and impact with defined treatment and acceptance thresholds, reviewed quarterly. Each Limited- or High-tier system also
+undergoes an AI Impact Assessment before deployment and on material change, covering prohibited-practice and high-risk screens,
+affected persons, harms, mitigations and residual risk.</span></div>
+<div class="srow"><span class="lbl">Supporting artifact</span><span class="val ev">AW-E07 AI Risk Register · AW-E08 AI Impact Assessment</span></div>
+<div class="srow"><span class="lbl">Record that proves it</span><span class="val">Scored risks with treatment owners, and at
+least one completed impact assessment for a system actually in production.</span></div>
+</div>
+
+<div class="rule"><p><strong>The caution that ships with the document.</strong> AW-E17's own instruction is blunt:
+<em>replace bracketed facts with your reality — never claim a control you do not operate.</em> A starting answer is a pattern
+to edit, not a statement of fact about your company. An answer that overstates what you do is worse than an honest gap,
+because the follow-up request is where it fails.</p></div>
+
+<h2>Where to go next</h2>
+<div class="grid2">
+<div class="gitem"><b>Free: which laws apply to you</b><span>A 24-question regulatory applicability checklist with an
+obligations calendar. <a class="ilink" href="https://annexwright.gumroad.com/l/checklist">Take it</a>.</span></div>
+<div class="gitem"><b>Free: the four-way crosswalk</b><span>ISO/IEC 42001 against NIST AI RMF, the EU AI Act and ISO/IEC 27001,
+clause by clause. A complete file from the paid set. <a class="ilink" href="/iso-42001-crosswalk/">Read it</a>.</span></div>
+<div class="gitem"><b>The evidence chain</b><span>Why a governance statement is stronger when you can show the artifact and the
+record behind it. <a class="ilink" href="/ai-governance-evidence/">Read the explainer</a>.</span></div>
+<div class="gitem"><b>The documents themselves</b><span>Essentials, $149, includes the answer bank, the inventory, the risk
+register and the impact assessment. <a class="ilink" href="/essentials/">See what is in it</a>.</span></div>
+</div>
+<p class="method"><strong>How this page was checked.</strong> Regulatory dates on this page were taken from the official texts and from the European Commission, the Illinois General Assembly, Texas Legislature Online, the Colorado General Assembly, the California Privacy Protection Agency, the New York State Senate and NYC DCWP, and were last reviewed on 2026-09-23. Where a date is an applicability or compliance deadline rather than an entry-into-force date, the page says so. Regulation changes; check the primary text before relying on any date for a decision. Nothing here is legal advice.</p>
+
+<h2>Related</h2><div class="related"><a class="ilink" href="/ai-governance-evidence/">What sits behind an answer</a> <a class="ilink" href="/essentials/">Essentials — the documents</a> <a class="ilink" href="/iso-42001-crosswalk/">Free four-way crosswalk</a></div>
+</div></main>
+<footer><div class="wrap"><span><span class="fb">Annexwright</span>AI Governance Toolkit — Edition 2026.1. Questions: <a class="ilink" href="mailto:hello@annexwright.com">hello@annexwright.com</a></span><span style="max-width:520px">Templates and guidance, not legal advice. ISO and IEC are trademarks of their respective organizations; Annexwright is not affiliated with, endorsed by or accredited by ISO, IEC or any certification body.</span></div></footer>
+</body>
+</html>
