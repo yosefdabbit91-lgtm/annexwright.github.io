@@ -5,12 +5,12 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Annexwright — the documentation behind your AI governance answers</title>
+<title>Annexwright — AI Questionnaire Rescue in 24 Hours</title>
 <link rel="canonical" href="https://annexwright.com/">
 <meta name="robots" content="index,follow">
-<meta name="description" content="When a customer asks how you govern AI, have the documentation behind the answer. Editable policies, registers, assessments and evidence structure — ISO/IEC 42001 and EU AI Act. Free complete document; sets from $149.">
-<meta property="og:title" content="Annexwright — have the system behind the answer">
-<meta property="og:description" content="Your customer asked how you govern AI. Annexwright gives you the editable policies, registers, assessments and documentation structure behind the answer. Free complete document, no email required.">
+<meta name="description" content="Your customer&#x27;s AI security questionnaire is due. Get an honest answer for up to 10 AI questions, the governance artifact behind each answer, and the evidence a reviewer may ask for within 24 hours. $149.">
+<meta property="og:title" content="Annexwright — AI Questionnaire Rescue in 24 Hours">
+<meta property="og:description" content="Answer the AI section of your customer&#x27;s security questionnaire with an honest answer, the governance artifact behind it, and the evidence a reviewer may ask for. Up to 10 questions, 24 hours, $149.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://annexwright.com/">
 <meta property="og:site_name" content="Annexwright">
@@ -19,8 +19,8 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Annexwright — the editable policies, registers, assessments and documentation structure behind your AI governance answers.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Annexwright — have the system behind the answer">
-<meta name="twitter:description" content="Your customer asked how you govern AI. Annexwright gives you the editable policies, registers, assessments and documentation structure behind the answer. Free complete document, no email required.">
+<meta name="twitter:title" content="Annexwright — AI Questionnaire Rescue in 24 Hours">
+<meta name="twitter:description" content="Answer the AI section of your customer&#x27;s security questionnaire with an honest answer, the governance artifact behind it, and the evidence a reviewer may ask for. Up to 10 questions, 24 hours, $149.">
 <meta name="twitter:image" content="https://annexwright.com/og-image.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -275,6 +275,23 @@
   .srow .val{font-size:.95rem; color:var(--ink); line-height:1.55}
   .srow .val.ev{font-family:var(--mono); font-size:.86rem; color:var(--teal)}
   .sample-foot{padding:12px 18px; border-top:1px solid var(--line); font-size:.85rem; color:var(--muted); line-height:1.5}
+
+  /* --- preview additions --- */
+  .flow.f4{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:880px){.flow.f4{grid-template-columns:1fr}}
+  .facts{display:flex; flex-wrap:wrap; gap:6px 14px; font-family:var(--mono); font-size:.72rem; letter-spacing:.06em; color:var(--ink-2); font-weight:600}
+  .facts span{padding:3px 8px; border:1px solid var(--line); border-radius:3px; background:var(--surface)}
+  .trust{font-size:.86rem; color:var(--muted)}
+  .xtable-wrap{overflow-x:auto; border:1px solid var(--line); border-radius:4px; background:var(--surface)}
+  .xtable{width:100%; border-collapse:collapse; font-size:.9rem; min-width:760px}
+  .xtable th{text-align:left; font-family:var(--mono); font-size:.66rem; letter-spacing:.11em; text-transform:uppercase; color:var(--ink-2); background:var(--surface-2); padding:11px 14px; border-bottom:1px solid var(--line)}
+  .xtable td{padding:13px 14px; border-top:1px solid var(--line); vertical-align:top; line-height:1.5; color:var(--ink)}
+  .xtable td.q{font-weight:700}
+  .xtable td.ev{font-family:var(--mono); font-size:.82rem; color:var(--teal)}
+  .xtable a{color:var(--navy); font-weight:700}
+  .samplelabel{display:inline-block; font-family:var(--mono); font-size:.68rem; letter-spacing:.11em; text-transform:uppercase; color:var(--crimson); background:var(--crimson-soft); padding:5px 9px; border-radius:3px; font-weight:600}
+  @media (max-width:720px){.xtable{min-width:0}.xtable thead{display:none}.xtable tr,.xtable td{display:block}.xtable td{border-top:none;padding:6px 14px}.xtable tr{border-top:1px solid var(--line);padding:8px 0}.xtable tr:first-child{border-top:none}.xtable td[data-l]::before{content:attr(data-l);display:block;font-family:var(--mono);font-size:.62rem;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}}
+  .getnot ul{margin:0; padding-left:1.1em; display:flex; flex-direction:column; gap:7px; font-size:.94rem; color:var(--ink-2); line-height:1.5}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://annexwright.com/#org","name":"Annexwright","url":"https://annexwright.com/","logo":"https://annexwright.com/apple-touch-icon.png","email":"hello@annexwright.com","description":"Independent product studio publishing editable ISO/IEC 42001 and EU AI Act governance documentation systems."},{"@type":"WebSite","@id":"https://annexwright.com/#website","url":"https://annexwright.com/","name":"Annexwright","publisher":{"@id":"https://annexwright.com/#org"},"inLanguage":"en","description":"Editable ISO/IEC 42001 and EU AI Act governance documentation systems."}]}</script>
 </head>
@@ -285,47 +302,148 @@
     <a class="brand" href="/">Annexwright</a>
     <nav>
       <a href="#how">How it works</a>
-      <a href="#proof">Proof</a>
-      <a href="#pricing">Pricing</a>
+      <a href="#example">Example</a>
+      <a href="#rescue">Rescue</a>
+      <a href="#choose">Other products</a>
       <a href="#faq">FAQ</a>
     </nav>
   </div>
 </header>
 
-<!-- ===== HERO + THE MECHANISM ===== -->
+<!-- ===== HERO — RESCUE ===== -->
 <section class="hero">
   <div class="wrap">
-   <div class="stack g24">
     <div class="stack g24 narrow">
-      <p class="eyebrow">Annexwright</p>
-      <h1>Your customer asked: <em>how do you govern AI?</em></h1>
-      <p class="lede">Annexwright gives you the editable policies, registers, assessments and documentation structure behind the answer — so your team starts from a working system instead of a blank page.</p>
-      <p class="small">For enterprise questionnaires, procurement requests, internal AI governance, and ISO/IEC 42001 preparation.</p>
+      <p class="eyebrow">AI Questionnaire Rescue</p>
+      <h1>Your customer's AI security questionnaire is due.</h1>
+      <p class="lede">Send up to 10 AI questions from it. Within 24 hours you get an honest answer for each one, the governance document it rests on, and the evidence a reviewer is likely to ask for next.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="#proof">See the actual answer bank</a>
-        <a class="btn btn-ghost" href="https://annexwright.gumroad.com/l/checklist">Start free</a>
+        <a class="btn btn-primary" href="https://annexwright.gumroad.com/l/rescue">Start with Rescue — $149</a>
+        <a class="btn btn-ghost" href="#example">See how one question is answered ↓</a>
+      </div>
+      <p class="facts"><span>$149 fixed</span><span>up to 10 AI questions</span><span>written mapping within 24 hours</span><span>20 editable governance documents included</span><span>no call needed</span></p>
+      <p class="trust">Editable governance documentation, mapped to your actual answers. Not legal advice or certification.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW RESCUE WORKS ===== -->
+<section id="how">
+  <div class="wrap stack g24">
+    <div class="stack g12 narrow">
+      <p class="eyebrow">How it works</p>
+      <h2>Question → answer → artifact → evidence.</h2>
+    </div>
+    <div class="flow f4">
+      <div class="fs"><span class="n">01 · You send</span><span class="d">Up to 10 AI questions from the questionnaire, plus one line on your product and how it uses AI. Email them to hello@annexwright.com after checkout.</span></div>
+      <div class="fs"><span class="n">02 · The answer</span><span class="d">A suggested answer written to be true for you. If you don't do something yet, it says so and shows what an honest "not yet" looks like.</span></div>
+      <div class="fs"><span class="n">03 · The artifact</span><span class="d">The policy, register or procedure a reviewer expects behind that answer.</span></div>
+      <div class="fs"><span class="n">04 · The evidence</span><span class="d">What "please attach it" will turn into, so the follow-up isn't a surprise.</span></div>
+    </div>
+    <p class="small">You supply your company's real facts, decisions and records. Annexwright never writes "yes" for a control you don't operate.</p>
+  </div>
+</section>
+
+<!-- ===== REAL EXAMPLE ===== -->
+<section id="example">
+  <div class="wrap stack g24">
+    <div class="stack g12 narrow">
+      <p class="eyebrow">See the real thing</p>
+      <h2>One real question, mapped properly</h2>
+      <p><span class="samplelabel">Sample format. Not a customer case study.</span></p>
+    </div>
+    <div class="xtable-wrap">
+      <table class="xtable">
+        <thead><tr><th>Question</th><th>If yes</th><th>If not yet</th><th>Artifact</th><th>Evidence a reviewer may ask for</th></tr></thead>
+        <tbody><tr><td class="q" data-l="Question">Do you maintain an inventory of AI systems?</td><td data-l="If yes">"Every AI system we use, including third-party models and AI features inside SaaS tools, is recorded in our AI System Inventory with an owner, purpose, data categories, risk tier and review date. It is reviewed [monthly]."</td><td data-l="If not yet">"We are establishing an AI System Inventory covering built and third-party AI. Target completion: [date]. Current AI use: [list]."</td><td class="ev" data-l="Artifact">AI System Inventory Register, referenced from the AI Governance Policy</td><td data-l="Evidence a reviewer may ask for">Redacted inventory extract · last review date · named owner · evidence that third-party AI (e.g. an AI feature enabled in a SaaS tool) is included, not only in-house models</td></tr></tbody>
+      </table>
+    </div>
+    <p class="small"><strong>Note:</strong> the trap is "every". Reviewers test it with AI you bought, not just AI you built. A short, true list beats a long, claimed one. Bracketed items are placeholders for your own facts.</p>
+  </div>
+</section>
+
+<!-- ===== WHAT RESCUE DELIVERS ===== -->
+<section id="rescue">
+  <div class="wrap stack g24">
+    <div class="stack g12 narrow">
+      <p class="eyebrow">What Rescue delivers</p>
+      <h2>A fixed scope, a fixed price.</h2>
+    </div>
+    <div class="cols cols-2">
+      <div class="card getnot"><span class="tag">You get</span>
+        <ul>
+          <li>A written mapping for up to 10 AI questions, delivered by email</li>
+          <li>Within 24 hours of receiving your questions</li>
+          <li>One round of clarification by email if an answer needs adjusting to your facts</li>
+          <li>The 20-file Annexwright Essentials documentation set at checkout (Word, Excel, PowerPoint), with 24 months of updates</li>
+        </ul>
+      </div>
+      <div class="card getnot"><span class="tag">It is not</span>
+        <ul>
+          <li>A call or a consulting engagement</li>
+          <li>Completion of your whole questionnaire: AI questions only, 10 maximum</li>
+          <li>Legal advice</li>
+          <li>A compliance or certification opinion</li>
+          <li>Answers that claim controls you don't operate</li>
+        </ul>
       </div>
     </div>
-
-    <div class="before">
-      <span class="lbl">Today</span>
-      <span class="txt">&ldquo;We use AI responsibly.&rdquo; &mdash; and then: no inventory, no named owner, no risk record, nothing to attach when the reviewer says <em>please send it over</em>.</span>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://annexwright.gumroad.com/l/rescue">Start with Rescue — $149</a>
+      <span class="small">30-day money-back guarantee · your questions are never published or shared</span>
     </div>
+  </div>
+</section>
 
-    <div class="flow">
-      <div class="fs"><span class="n">01 · They ask</span><span class="t">The enterprise question</span><span class="d">"Do you have an AI governance policy approved by senior management?"</span></div>
-      <div class="fs"><span class="n">02 · You answer</span><span class="t">The answer bank</span><span class="d">A pre-written, factual answer you edit to match your reality.</span></div>
-      <div class="fs"><span class="n">03 · It rests on</span><span class="t">The governance artifact</span><span class="d">Policy, inventory, risk register, impact assessment, oversight procedure.</span></div>
-      <div class="fs"><span class="n">04 · Backed by</span><span class="t">Records and evidence</span><span class="d">The structure that holds the decisions, reviews and logs you produce.</span></div>
-      <div class="fs"><span class="n">05 · Result</span><span class="t">An answer you can support</span><span class="d">When the reviewer says "please attach it", something exists.</span></div>
+<!-- ===== WHY NOT JUST ASK AN AI ===== -->
+<section id="why-ai">
+  <div class="wrap stack g12 narrow">
+    <p class="eyebrow">Why not just ask an AI?</p>
+    <p class="lede">An AI assistant writes a fluent answer in seconds, and you can use one. What it won't do on its own is tie that answer to the document a reviewer will ask to see, or tell you when the honest answer is "not yet". Rescue maps each answer to the artifact and evidence behind it, then gives you the editable documents to build those artifacts.</p>
+    <p class="small">The company facts, the controls and the records behind them stay yours to supply and maintain.</p>
+  </div>
+</section>
+
+<!-- ===== CHOOSE BY SITUATION ===== -->
+<section id="choose">
+  <div class="wrap stack g24">
+    <div class="stack g12 narrow">
+      <p class="eyebrow">Different job?</p>
+      <h2>Choose by situation.</h2>
     </div>
-    <p class="small">The questionnaire is not the real problem. The questionnaire reveals whether there is a governance system behind the answer.</p>
-   </div>
+    <div class="xtable-wrap">
+      <table class="xtable">
+        <thead><tr><th>You need</th><th>Choose</th><th>Price</th></tr></thead>
+        <tbody>
+          <tr><td data-l="You need">An urgent questionnaire answered</td><td data-l="Choose"><a href="https://annexwright.gumroad.com/l/rescue">Rescue</a></td><td data-l="Price">$149</td></tr>
+          <tr><td data-l="You need">A governance foundation for one company</td><td data-l="Choose"><a href="/essentials/">Essentials</a></td><td data-l="Price">$149</td></tr>
+          <tr><td data-l="You need">A formal ISO/IEC 42001 management system</td><td data-l="Choose"><a href="/professional/">Professional</a></td><td data-l="Price">$397</td></tr>
+          <tr><td data-l="You need">Reusable delivery materials for multiple clients</td><td data-l="Choose"><a href="/consultant/">Consultant</a></td><td data-l="Price">$897</td></tr>
+          <tr><td data-l="You need">Documentation written for one AI system</td><td data-l="Choose"><a href="https://annexwright.gumroad.com/l/vmgebv">Readiness Sprint</a></td><td data-l="Price">$2,450</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">Full tier details and what each set contains are <a class="ilink" href="#pricing">further down</a>.</p>
+  </div>
+</section>
+
+<!-- ===== FREE RESOURCES ===== -->
+<section id="free">
+  <div class="wrap stack g24">
+    <div class="stack g12 narrow">
+      <p class="eyebrow">Free resources</p>
+      <h2>Prefer to inspect the work first?</h2>
+    </div>
+    <div class="outs">
+      <div class="out"><b>Free, complete — the four-way crosswalk</b><span>ISO/IEC 42001 mapped to NIST AI RMF, the EU AI Act and ISO/IEC 27001. A whole file from the paid set. <a class="ilink" href="/iso-42001-crosswalk/">Read it</a> or <a class="ilink" href="https://annexwright.com/iso-42001-crosswalk/Four-Way-Framework-Crosswalk.xlsx">download the workbook</a>.</span></div>
+      <div class="out"><b>Free, complete — the applicability checklist</b><span>24 screening questions and an obligations calendar to 2028, covering the EU AI Act and the US state laws. <a class="ilink" href="https://annexwright.gumroad.com/l/checklist">Take it</a>.</span></div>
+      <div class="out"><b>Free reference — the twenty questions</b><span>The AI questions that now appear in enterprise questionnaires, and the artifact each answer has to rest on. <a class="ilink" href="/ai-security-questionnaire/">See them</a>.</span></div>
+    </div>
   </div>
 </section>
 
 <!-- ===== WHY THIS EXISTS — BUYING TRIGGERS ===== -->
-<section id="why">
+<section id="situations">
   <div class="wrap stack g32">
     <div class="stack g12 narrow">
       <p class="eyebrow">Why this exists</p>
@@ -366,8 +484,8 @@
   </div>
 </section>
 
-<!-- ===== HOW IT WORKS ===== -->
-<section id="how">
+<!-- ===== THE DOCUMENTATION SYSTEM ===== -->
+<section id="system">
   <div class="wrap stack g32">
     <div class="stack g12 narrow">
       <p class="eyebrow">How it works</p>
@@ -478,8 +596,8 @@
 <section id="proof">
   <div class="wrap stack g32">
     <div class="stack g12 narrow">
-      <p class="eyebrow">See the real thing</p>
-      <h2>One row from the answer bank, exactly as it ships.</h2>
+      <p class="eyebrow">Inside the documentation set</p>
+      <h2>What the Essentials answer bank looks like, exactly as it ships.</h2>
       <p class="lede">There are no customer logos on this page because there are no customers yet. Judge the work instead.</p>
     </div>
 
@@ -494,20 +612,6 @@
       <div class="sample-foot">That second answer is only true if the register exists and carries those fields — owner, purpose, data classes, risk tier, review date. That is the point: the answer and the artifact behind it are built as one thing. Square brackets are the facts only you can supply. The document's own instruction is blunt about it: replace bracketed facts with your reality — never claim a control you do not operate.</div>
     </div>
 
-    <div class="outs">
-      <div class="out">
-        <b>Free, complete — the four-way crosswalk</b>
-        <span>ISO/IEC 42001 mapped to NIST AI RMF, the EU AI Act and ISO/IEC 27001. A whole file from the paid set. <a class="ilink" href="/iso-42001-crosswalk/">Read it</a> or <a class="ilink" href="https://annexwright.com/iso-42001-crosswalk/Four-Way-Framework-Crosswalk.xlsx">download the workbook</a>.</span>
-      </div>
-      <div class="out">
-        <b>Free, complete — the applicability checklist</b>
-        <span>24 screening questions and an obligations calendar to 2028, covering the EU AI Act and the US state laws. <a class="ilink" href="https://annexwright.gumroad.com/l/checklist">Take it</a>.</span>
-      </div>
-      <div class="out">
-        <b>Free reference — the twenty questions</b>
-        <span>The AI questions that now appear in enterprise questionnaires, and the artifact each answer has to rest on. <a class="ilink" href="/ai-security-questionnaire/">See them</a>.</span>
-      </div>
-    </div>
 
     <details class="disclose">
       <summary>Why it holds up, and the dates driving it</summary>
@@ -641,6 +745,18 @@
 
     <div class="stack" style="margin-top:8px">
       <details class="disclose">
+        <summary>What if I have more than 10 AI questions?</summary>
+        <div class="disclose-body">Order Rescue again, or email <a class="ilink" href="mailto:hello@annexwright.com">hello@annexwright.com</a> for a quote.</div>
+      </details>
+      <details class="disclose">
+        <summary>Who prepares the mapping?</summary>
+        <div class="disclose-body">Annexwright's founder prepares it from the questions and facts you send, using AI-assisted drafting. Each answer is mapped to a named artifact in the documentation set, and it never claims a control you don't operate.</div>
+      </details>
+      <details class="disclose">
+        <summary>What if the honest answer is "not yet"?</summary>
+        <div class="disclose-body">Then the mapping says so. It shows what a credible "not yet" answer looks like, which document to put in place and what a reviewer is likely to ask for once it exists.</div>
+      </details>
+      <details class="disclose">
         <summary>Will this get us certified to ISO/IEC 42001?</summary>
         <div class="disclose-body">It gives you the documentation an auditor expects and the structure to produce the evidence. It cannot give you the records only elapsed time produces — a completed internal audit and a management review. The <a class="ilink" href="/iso-42001-gap-assessment/">gap assessment</a> and the 90-day roadmap in Professional plan exactly that, and is candid about why first attempts usually fail.</div>
       </details>
@@ -713,11 +829,11 @@
 <section id="about-honest">
   <div class="wrap stack g16 narrow">
     <p class="eyebrow">Who is behind this</p>
-    <h2>An independent product studio.</h2>
-    <p class="lede">Annexwright builds editable document systems for work that is governed by an external rulebook. The first covers AI governance: ISO/IEC 42001, the EU AI Act and US state AI law, drafted against the published standards and legislation and checked against primary sources.</p>
-    <p class="small">It is not legal advice and it will not make anyone compliant on its own. <a class="ilink" href="#faq">The full picture is in the FAQ</a>.</p>
+    <h2>An independent, one-person product studio.</h2>
+    <p class="lede">Annexwright launched in September 2026. It builds editable document systems for work governed by an external rulebook, starting with AI governance: ISO/IEC 42001, the EU AI Act and US state AI law. The documents are drafted with AI assistance and checked against the published standards and legislation.</p>
+    <p class="small">There are no customers or case studies yet. Nothing here is certified or endorsed by anyone, and it is not legal advice. <a class="ilink" href="#faq">The full picture is in the FAQ</a>.</p>
     <div class="cta-row" style="margin-top:8px">
-      <a class="btn btn-primary" href="https://annexwright.gumroad.com/l/checklist">Download the free checklist</a>
+      <a class="btn btn-primary" href="https://annexwright.gumroad.com/l/rescue">Start with Rescue — $149</a>
     </div>
   </div>
 </section>
